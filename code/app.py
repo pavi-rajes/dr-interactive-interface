@@ -123,7 +123,7 @@ tab_rule = ui.nav_panel(
                         ui.output_plot("r_raster", height="860px")),
                 ui.card(ui.card_header("Mean rate by position in block, per context"), ui.output_plot("r_profile", height="290px")),
                 ui.card(ui.card_header("Instruction-trial dynamics: selected unit and the displayed population (trials 0 to 14 of switch blocks)"),
-                        ui.output_plot("r_dynamics", height="330px")),
+                        ui.output_plot("r_dynamics", height="380px")),
             ),
             ui.div(
                 ui.card(ui.card_header("Rule-change units (click a dot to select)"), output_widget("brain_rule", height="560px")),

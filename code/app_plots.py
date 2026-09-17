@@ -421,7 +421,7 @@ def instruction_dynamics_plot(unit_prof: pd.DataFrame, pop_prof: pd.DataFrame | 
     pooled. Right: population fold change (rate / unit's late-trial rate) over the same positions for the displayed
     rule-updating set, mean and SEM, with a step-vs-exponential-decay comparison over the instruction trials.
     pop_prof: long table with columns unit_key, rel_trial, fold (one row per unit x position)."""
-    fig, axes = plt.subplots(1, 2, figsize=(9, 3.0), layout="tight")
+    fig, axes = plt.subplots(1, 2, figsize=(9, 3.6), layout="tight")
     ax = axes[0]
     for c, col, lw in (("aud", AUD, 1.1), ("vis", VIS, 1.1), ("both", "#222222", 1.8)):
         p = unit_prof[(unit_prof["context"] == c) & (unit_prof["align"] == "block_start") & (unit_prof["rel_trial"] < n_pos)].sort_values("rel_trial")
@@ -430,7 +430,7 @@ def instruction_dynamics_plot(unit_prof: pd.DataFrame, pop_prof: pd.DataFrame | 
     ax.axvspan(-0.5, instruction_n - 0.5, color=PHASE_COLOR["instruction"], alpha=0.15, lw=0, label="instruction trials")
     ax.set_xlabel("trial in block"); ax.set_ylabel(f"{window} rate (Hz)"); ax.set_xticks(range(0, n_pos, 2)); ax.tick_params(labelsize=8)
     ax.set_title("selected unit (mean over blocks)", fontsize=9)
-    ax.legend(fontsize=6.5, loc="lower left", bbox_to_anchor=(0, 1.08), ncol=4, frameon=False)
+    ax.legend(fontsize=6.5, loc="upper center", bbox_to_anchor=(0.5, -0.32), ncol=2, frameon=False)
     ax = axes[1]
     if pop_prof is not None and len(pop_prof):
         g = pop_prof.groupby("rel_trial")["fold"]
@@ -453,7 +453,7 @@ def instruction_dynamics_plot(unit_prof: pd.DataFrame, pop_prof: pd.DataFrame | 
         ax.text(0.5, 0.5, "no units in the current set", ha="center", va="center", transform=ax.transAxes, fontsize=9)
     ax.axvspan(-0.5, instruction_n - 0.5, color=PHASE_COLOR["instruction"], alpha=0.15, lw=0)
     ax.set_xlabel("trial in block"); ax.set_ylabel("rate / late-trial rate"); ax.set_xticks(range(0, n_pos, 2)); ax.tick_params(labelsize=8)
-    ax.legend(fontsize=6.5, loc="lower left", bbox_to_anchor=(0, 1.08), ncol=3, frameon=False)
+    ax.legend(fontsize=6.5, loc="upper center", bbox_to_anchor=(0.5, -0.32), ncol=2, frameon=False)
     if title:
-        fig.suptitle(title, fontsize=9, y=1.08)
+        fig.suptitle(title, fontsize=9)
     return fig
