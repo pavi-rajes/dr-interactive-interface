@@ -1,0 +1,1450 @@
+{
+  "generated_at": "2026-09-14T23:14:44+00:00",
+  "atlas": "allen_mouse_25um",
+  "orientation": "asr",
+  "resolution_um": [
+    25.0,
+    25.0,
+    25.0
+  ],
+  "axis_order": [
+    "ap",
+    "dv",
+    "ml"
+  ],
+  "structures": {
+    "root": {
+      "acronym": "root",
+      "id": 997,
+      "name": "root",
+      "rgb": [
+        255,
+        255,
+        255
+      ],
+      "n_vertices": 49324,
+      "n_faces": 98638,
+      "file": "root.npz",
+      "bounds_min_um": [
+        -16.83,
+        133.93,
+        485.73
+      ],
+      "bounds_max_um": [
+        13192.5,
+        7564.24,
+        10890.6
+      ]
+    },
+    "ACAd": {
+      "acronym": "ACAd",
+      "id": 39,
+      "name": "Anterior cingulate area, dorsal part",
+      "rgb": [
+        64,
+        166,
+        102
+      ],
+      "n_vertices": 2717,
+      "n_faces": 5426,
+      "file": "ACAd.npz",
+      "bounds_min_um": [
+        2551.06,
+        907.84,
+        4576.19
+      ],
+      "bounds_max_um": [
+        6253.88,
+        2935.28,
+        6799.72
+      ]
+    },
+    "ACAv": {
+      "acronym": "ACAv",
+      "id": 48,
+      "name": "Anterior cingulate area, ventral part",
+      "rgb": [
+        64,
+        166,
+        102
+      ],
+      "n_vertices": 1894,
+      "n_faces": 3780,
+      "file": "ACAv.npz",
+      "bounds_min_um": [
+        3813.98,
+        1474.66,
+        4818.9
+      ],
+      "bounds_max_um": [
+        6226.55,
+        3679.69,
+        6562.75
+      ]
+    },
+    "AD": {
+      "acronym": "AD",
+      "id": 64,
+      "name": "Anterodorsal nucleus",
+      "rgb": [
+        255,
+        144,
+        159
+      ],
+      "n_vertices": 290,
+      "n_faces": 572,
+      "file": "AD.npz",
+      "bounds_min_um": [
+        5825.74,
+        3122.93,
+        4687.74
+      ],
+      "bounds_max_um": [
+        6341.19,
+        3982.09,
+        6683.8
+      ]
+    },
+    "AON": {
+      "acronym": "AON",
+      "id": 159,
+      "name": "Anterior olfactory nucleus",
+      "rgb": [
+        84,
+        191,
+        148
+      ],
+      "n_vertices": 3206,
+      "n_faces": 6412,
+      "file": "AON.npz",
+      "bounds_min_um": [
+        1854.49,
+        4013.04,
+        3570.97
+      ],
+      "bounds_max_um": [
+        3729.81,
+        6419.67,
+        7796.29
+      ]
+    },
+    "AUDd": {
+      "acronym": "AUDd",
+      "id": 1011,
+      "name": "Dorsal auditory area",
+      "rgb": [
+        1,
+        147,
+        153
+      ],
+      "n_vertices": 1295,
+      "n_faces": 2582,
+      "file": "AUDd.npz",
+      "bounds_min_um": [
+        6913.89,
+        1577.13,
+        782.05
+      ],
+      "bounds_max_um": [
+        8129.05,
+        3227.96,
+        10592.7
+      ]
+    },
+    "AUDp": {
+      "acronym": "AUDp",
+      "id": 1002,
+      "name": "Primary auditory area",
+      "rgb": [
+        1,
+        147,
+        153
+      ],
+      "n_vertices": 1445,
+      "n_faces": 2882,
+      "file": "AUDp.npz",
+      "bounds_min_um": [
+        7240.42,
+        2055.4,
+        574.81
+      ],
+      "bounds_max_um": [
+        8651.91,
+        3444.48,
+        10803.4
+      ]
+    },
+    "AUDpo": {
+      "acronym": "AUDpo",
+      "id": 1027,
+      "name": "Posterior auditory area",
+      "rgb": [
+        1,
+        147,
+        153
+      ],
+      "n_vertices": 824,
+      "n_faces": 1640,
+      "file": "AUDpo.npz",
+      "bounds_min_um": [
+        7983.73,
+        1709.3,
+        855.79
+      ],
+      "bounds_max_um": [
+        8840.55,
+        3014.51,
+        10516.8
+      ]
+    },
+    "AUDv": {
+      "acronym": "AUDv",
+      "id": 1018,
+      "name": "Ventral auditory area",
+      "rgb": [
+        1,
+        147,
+        153
+      ],
+      "n_vertices": 1522,
+      "n_faces": 3036,
+      "file": "AUDv.npz",
+      "bounds_min_um": [
+        6915.09,
+        2711.26,
+        516.16
+      ],
+      "bounds_max_um": [
+        8841.66,
+        3808.06,
+        10862.3
+      ]
+    },
+    "AV": {
+      "acronym": "AV",
+      "id": 255,
+      "name": "Anteroventral nucleus of thalamus",
+      "rgb": [
+        255,
+        144,
+        159
+      ],
+      "n_vertices": 510,
+      "n_faces": 1012,
+      "file": "AV.npz",
+      "bounds_min_um": [
+        5687.83,
+        3412.13,
+        4266.95
+      ],
+      "bounds_max_um": [
+        6432.29,
+        4337.81,
+        7099.97
+      ]
+    },
+    "CA1": {
+      "acronym": "CA1",
+      "id": 382,
+      "name": "Field CA1",
+      "rgb": [
+        126,
+        208,
+        75
+      ],
+      "n_vertices": 6314,
+      "n_faces": 12620,
+      "file": "CA1.npz",
+      "bounds_min_um": [
+        6353.59,
+        1378.07,
+        1453.93
+      ],
+      "bounds_max_um": [
+        9012.91,
+        6022.84,
+        9928.49
+      ]
+    },
+    "CA2": {
+      "acronym": "CA2",
+      "id": 423,
+      "name": "Field CA2",
+      "rgb": [
+        126,
+        208,
+        75
+      ],
+      "n_vertices": 2044,
+      "n_faces": 4070,
+      "file": "CA2.npz",
+      "bounds_min_um": [
+        6293.66,
+        1954.45,
+        1822.88
+      ],
+      "bounds_max_um": [
+        8316.2,
+        5870.0,
+        9554.27
+      ]
+    },
+    "CA3": {
+      "acronym": "CA3",
+      "id": 463,
+      "name": "Field CA3",
+      "rgb": [
+        126,
+        208,
+        75
+      ],
+      "n_vertices": 4906,
+      "n_faces": 9804,
+      "file": "CA3.npz",
+      "bounds_min_um": [
+        6022.58,
+        2003.51,
+        1857.17
+      ],
+      "bounds_max_um": [
+        8833.86,
+        6260.55,
+        9522.18
+      ]
+    },
+    "CP": {
+      "acronym": "CP",
+      "id": 672,
+      "name": "Caudoputamen",
+      "rgb": [
+        152,
+        214,
+        249
+      ],
+      "n_vertices": 8394,
+      "n_faces": 16780,
+      "file": "CP.npz",
+      "bounds_min_um": [
+        3756.18,
+        2512.69,
+        1759.87
+      ],
+      "bounds_max_um": [
+        7643.26,
+        5879.12,
+        9623.34
+      ]
+    },
+    "DG": {
+      "acronym": "DG",
+      "id": 726,
+      "name": "Dentate gyrus",
+      "rgb": [
+        126,
+        208,
+        75
+      ],
+      "n_vertices": 5380,
+      "n_faces": 10752,
+      "file": "DG.npz",
+      "bounds_min_um": [
+        6079.16,
+        1995.41,
+        2168.67
+      ],
+      "bounds_max_um": [
+        9223.32,
+        6364.86,
+        9213.83
+      ]
+    },
+    "DP": {
+      "acronym": "DP",
+      "id": 814,
+      "name": "Dorsal peduncular area",
+      "rgb": [
+        164,
+        218,
+        164
+      ],
+      "n_vertices": 672,
+      "n_faces": 1336,
+      "file": "DP.npz",
+      "bounds_min_um": [
+        3164.49,
+        3581.83,
+        4910.74
+      ],
+      "bounds_max_um": [
+        4094.88,
+        4798.21,
+        6470.28
+      ]
+    },
+    "ECT5": {
+      "acronym": "ECT5",
+      "id": 988,
+      "name": "Ectorhinal area/Layer 5",
+      "rgb": [
+        13,
+        159,
+        145
+      ],
+      "n_vertices": 845,
+      "n_faces": 1682,
+      "file": "ECT5.npz",
+      "bounds_min_um": [
+        7013.56,
+        3325.18,
+        969.43
+      ],
+      "bounds_max_um": [
+        9330.68,
+        4869.61,
+        10411.5
+      ]
+    },
+    "ECT6a": {
+      "acronym": "ECT6a",
+      "id": 977,
+      "name": "Ectorhinal area/Layer 6a",
+      "rgb": [
+        13,
+        159,
+        145
+      ],
+      "n_vertices": 715,
+      "n_faces": 1422,
+      "file": "ECT6a.npz",
+      "bounds_min_um": [
+        7073.28,
+        3414.41,
+        1178.63
+      ],
+      "bounds_max_um": [
+        9267.83,
+        4892.19,
+        10192.0
+      ]
+    },
+    "FRP": {
+      "acronym": "FRP",
+      "id": 184,
+      "name": "Frontal pole, cerebral cortex",
+      "rgb": [
+        38,
+        143,
+        69
+      ],
+      "n_vertices": 1138,
+      "n_faces": 2268,
+      "file": "FRP.npz",
+      "bounds_min_um": [
+        1811.9,
+        2335.75,
+        3887.52
+      ],
+      "bounds_max_um": [
+        3389.13,
+        3175.24,
+        7490.63
+      ]
+    },
+    "GU": {
+      "acronym": "GU",
+      "id": 1057,
+      "name": "Gustatory areas",
+      "rgb": [
+        0,
+        156,
+        117
+      ],
+      "n_vertices": 1615,
+      "n_faces": 3222,
+      "file": "GU.npz",
+      "bounds_min_um": [
+        3537.33,
+        3923.62,
+        1047.46
+      ],
+      "bounds_max_um": [
+        5853.72,
+        4975.55,
+        10327.8
+      ]
+    },
+    "HPF": {
+      "acronym": "HPF",
+      "id": 1089,
+      "name": "Hippocampal formation",
+      "rgb": [
+        126,
+        208,
+        75
+      ],
+      "n_vertices": 14773,
+      "n_faces": 29530,
+      "file": "HPF.npz",
+      "bounds_min_um": [
+        4073.4,
+        1369.16,
+        628.37
+      ],
+      "bounds_max_um": [
+        10418.5,
+        6426.89,
+        10758.8
+      ]
+    },
+    "ILA": {
+      "acronym": "ILA",
+      "id": 44,
+      "name": "Infralimbic area",
+      "rgb": [
+        89,
+        179,
+        99
+      ],
+      "n_vertices": 803,
+      "n_faces": 1598,
+      "file": "ILA.npz",
+      "bounds_min_um": [
+        2997.37,
+        3260.88,
+        4750.33
+      ],
+      "bounds_max_um": [
+        3965.38,
+        4423.3,
+        6611.34
+      ]
+    },
+    "LGv": {
+      "acronym": "LGv",
+      "id": 178,
+      "name": "Ventral part of the lateral geniculate complex",
+      "rgb": [
+        255,
+        144,
+        159
+      ],
+      "n_vertices": 590,
+      "n_faces": 1172,
+      "file": "LGv.npz",
+      "bounds_min_um": [
+        6851.07,
+        3166.16,
+        2759.35
+      ],
+      "bounds_max_um": [
+        8146.22,
+        4418.84,
+        8601.36
+      ]
+    },
+    "LSc": {
+      "acronym": "LSc",
+      "id": 250,
+      "name": "Lateral septal nucleus, caudal (caudodorsal) part",
+      "rgb": [
+        144,
+        203,
+        237
+      ],
+      "n_vertices": 761,
+      "n_faces": 1514,
+      "file": "LSc.npz",
+      "bounds_min_um": [
+        4673.28,
+        2550.48,
+        4776.69
+      ],
+      "bounds_max_um": [
+        5824.39,
+        3691.54,
+        6597.58
+      ]
+    },
+    "LSr": {
+      "acronym": "LSr",
+      "id": 258,
+      "name": "Lateral septal nucleus, rostral (rostroventral) part",
+      "rgb": [
+        144,
+        203,
+        237
+      ],
+      "n_vertices": 1682,
+      "n_faces": 3356,
+      "file": "LSr.npz",
+      "bounds_min_um": [
+        3887.71,
+        2800.92,
+        4745.46
+      ],
+      "bounds_max_um": [
+        5590.32,
+        5487.77,
+        6634.12
+      ]
+    },
+    "MB": {
+      "acronym": "MB",
+      "id": 313,
+      "name": "Midbrain",
+      "rgb": [
+        255,
+        100,
+        255
+      ],
+      "n_vertices": 10518,
+      "n_faces": 21040,
+      "file": "MB.npz",
+      "bounds_min_um": [
+        7349.31,
+        1007.08,
+        3155.01
+      ],
+      "bounds_max_um": [
+        11078.5,
+        6095.66,
+        8231.25
+      ]
+    },
+    "MOB": {
+      "acronym": "MOB",
+      "id": 507,
+      "name": "Main olfactory bulb",
+      "rgb": [
+        154,
+        210,
+        189
+      ],
+      "n_vertices": 5853,
+      "n_faces": 11694,
+      "file": "MOB.npz",
+      "bounds_min_um": [
+        241.31,
+        2554.87,
+        3575.77
+      ],
+      "bounds_max_um": [
+        2768.38,
+        6270.62,
+        7808.66
+      ]
+    },
+    "MOp": {
+      "acronym": "MOp",
+      "id": 985,
+      "name": "Primary motor area",
+      "rgb": [
+        31,
+        157,
+        90
+      ],
+      "n_vertices": 5483,
+      "n_faces": 10958,
+      "file": "MOp.npz",
+      "bounds_min_um": [
+        2704.39,
+        481.23,
+        2094.69
+      ],
+      "bounds_max_um": [
+        6439.67,
+        4287.95,
+        9282.85
+      ]
+    },
+    "MOs": {
+      "acronym": "MOs",
+      "id": 993,
+      "name": "Secondary motor area",
+      "rgb": [
+        31,
+        157,
+        90
+      ],
+      "n_vertices": 6330,
+      "n_faces": 12652,
+      "file": "MOs.npz",
+      "bounds_min_um": [
+        1939.24,
+        490.53,
+        2796.77
+      ],
+      "bounds_max_um": [
+        6409.26,
+        3799.48,
+        8586.25
+      ]
+    },
+    "MPT": {
+      "acronym": "MPT",
+      "id": 531,
+      "name": "Medial pretectal area",
+      "rgb": [
+        255,
+        144,
+        255
+      ],
+      "n_vertices": 114,
+      "n_faces": 220,
+      "file": "MPT.npz",
+      "bounds_min_um": [
+        7926.24,
+        2213.71,
+        5181.62
+      ],
+      "bounds_max_um": [
+        8197.12,
+        2552.88,
+        6187.73
+      ]
+    },
+    "NOT": {
+      "acronym": "NOT",
+      "id": 628,
+      "name": "Nucleus of the optic tract",
+      "rgb": [
+        255,
+        144,
+        255
+      ],
+      "n_vertices": 428,
+      "n_faces": 848,
+      "file": "NOT.npz",
+      "bounds_min_um": [
+        7786.21,
+        2148.48,
+        4042.67
+      ],
+      "bounds_max_um": [
+        8392.24,
+        2760.9,
+        7325.02
+      ]
+    },
+    "OLF": {
+      "acronym": "OLF",
+      "id": 698,
+      "name": "Olfactory areas",
+      "rgb": [
+        154,
+        210,
+        189
+      ],
+      "n_vertices": 19330,
+      "n_faces": 38596,
+      "file": "OLF.npz",
+      "bounds_min_um": [
+        1.41,
+        2554.73,
+        970.82
+      ],
+      "bounds_max_um": [
+        9004.32,
+        7545.28,
+        10408.5
+      ]
+    },
+    "ORBl": {
+      "acronym": "ORBl",
+      "id": 723,
+      "name": "Orbital area, lateral part",
+      "rgb": [
+        36,
+        138,
+        94
+      ],
+      "n_vertices": 1913,
+      "n_faces": 3818,
+      "file": "ORBl.npz",
+      "bounds_min_um": [
+        1952.96,
+        2867.63,
+        3581.4
+      ],
+      "bounds_max_um": [
+        3807.79,
+        4712.59,
+        7798.36
+      ]
+    },
+    "ORBm": {
+      "acronym": "ORBm",
+      "id": 731,
+      "name": "Orbital area, medial part",
+      "rgb": [
+        36,
+        138,
+        94
+      ],
+      "n_vertices": 1591,
+      "n_faces": 3174,
+      "file": "ORBm.npz",
+      "bounds_min_um": [
+        1928.55,
+        2771.79,
+        4606.13
+      ],
+      "bounds_max_um": [
+        3561.08,
+        4517.17,
+        6768.5
+      ]
+    },
+    "ORBvl": {
+      "acronym": "ORBvl",
+      "id": 746,
+      "name": "Orbital area, ventrolateral part",
+      "rgb": [
+        36,
+        138,
+        94
+      ],
+      "n_vertices": 1547,
+      "n_faces": 3086,
+      "file": "ORBvl.npz",
+      "bounds_min_um": [
+        1928.92,
+        2844.81,
+        4458.71
+      ],
+      "bounds_max_um": [
+        3620.44,
+        4483.21,
+        6928.57
+      ]
+    },
+    "PAG": {
+      "acronym": "PAG",
+      "id": 795,
+      "name": "Periaqueductal gray",
+      "rgb": [
+        255,
+        144,
+        255
+      ],
+      "n_vertices": 2737,
+      "n_faces": 5456,
+      "file": "PAG.npz",
+      "bounds_min_um": [
+        7355.51,
+        1773.4,
+        4619.36
+      ],
+      "bounds_max_um": [
+        10595.2,
+        4725.76,
+        6759.42
+      ]
+    },
+    "PERI": {
+      "acronym": "PERI",
+      "id": 922,
+      "name": "Perirhinal area",
+      "rgb": [
+        14,
+        150,
+        132
+      ],
+      "n_vertices": 1296,
+      "n_faces": 2584,
+      "file": "PERI.npz",
+      "bounds_min_um": [
+        6992.38,
+        3408.17,
+        642.62
+      ],
+      "bounds_max_um": [
+        9525.7,
+        5204.11,
+        10742.7
+      ]
+    },
+    "PL": {
+      "acronym": "PL",
+      "id": 972,
+      "name": "Prelimbic area",
+      "rgb": [
+        47,
+        168,
+        80
+      ],
+      "n_vertices": 1647,
+      "n_faces": 3286,
+      "file": "PL.npz",
+      "bounds_min_um": [
+        1920.65,
+        2072.03,
+        4536.49
+      ],
+      "bounds_max_um": [
+        4039.97,
+        3389.33,
+        6844.42
+      ]
+    },
+    "PPT": {
+      "acronym": "PPT",
+      "id": 1061,
+      "name": "Posterior pretectal nucleus",
+      "rgb": [
+        255,
+        144,
+        255
+      ],
+      "n_vertices": 373,
+      "n_faces": 738,
+      "file": "PPT.npz",
+      "bounds_min_um": [
+        7876.84,
+        2240.83,
+        4084.7
+      ],
+      "bounds_max_um": [
+        8355.71,
+        2837.52,
+        7264.72
+      ]
+    },
+    "RSPagl": {
+      "acronym": "RSPagl",
+      "id": 894,
+      "name": "Retrosplenial area, lateral agranular part",
+      "rgb": [
+        26,
+        166,
+        152
+      ],
+      "n_vertices": 2749,
+      "n_faces": 5484,
+      "file": "RSPagl.npz",
+      "bounds_min_um": [
+        6087.2,
+        168.66,
+        3002.52
+      ],
+      "bounds_max_um": [
+        10292.6,
+        2045.19,
+        8377.66
+      ]
+    },
+    "RSPd": {
+      "acronym": "RSPd",
+      "id": 879,
+      "name": "Retrosplenial area, dorsal part",
+      "rgb": [
+        26,
+        166,
+        152
+      ],
+      "n_vertices": 3306,
+      "n_faces": 6604,
+      "file": "RSPd.npz",
+      "bounds_min_um": [
+        6055.35,
+        161.19,
+        3061.3
+      ],
+      "bounds_max_um": [
+        10141.8,
+        2363.41,
+        8313.71
+      ]
+    },
+    "RSPv": {
+      "acronym": "RSPv",
+      "id": 886,
+      "name": "Retrosplenial area, ventral part",
+      "rgb": [
+        26,
+        166,
+        152
+      ],
+      "n_vertices": 3026,
+      "n_faces": 6044,
+      "file": "RSPv.npz",
+      "bounds_min_um": [
+        6021.29,
+        433.23,
+        3917.53
+      ],
+      "bounds_max_um": [
+        9334.49,
+        2121.28,
+        7460.74
+      ]
+    },
+    "SCdg": {
+      "acronym": "SCdg",
+      "id": 26,
+      "name": "Superior colliculus, motor related, deep gray layer",
+      "rgb": [
+        255,
+        144,
+        255
+      ],
+      "n_vertices": 1589,
+      "n_faces": 3174,
+      "file": "SCdg.npz",
+      "bounds_min_um": [
+        8317.43,
+        1829.27,
+        4227.9
+      ],
+      "bounds_max_um": [
+        10179.5,
+        3145.63,
+        7141.23
+      ]
+    },
+    "SCdw": {
+      "acronym": "SCdw",
+      "id": 42,
+      "name": "Superior colliculus, motor related, deep white layer",
+      "rgb": [
+        255,
+        144,
+        255
+      ],
+      "n_vertices": 1120,
+      "n_faces": 2236,
+      "file": "SCdw.npz",
+      "bounds_min_um": [
+        8323.94,
+        1984.74,
+        4716.97
+      ],
+      "bounds_max_um": [
+        10192.0,
+        3047.85,
+        6666.43
+      ]
+    },
+    "SCig": {
+      "acronym": "SCig",
+      "id": 10,
+      "name": "Superior colliculus, motor related, intermediate gray layer",
+      "rgb": [
+        255,
+        144,
+        255
+      ],
+      "n_vertices": 2452,
+      "n_faces": 4900,
+      "file": "SCig.npz",
+      "bounds_min_um": [
+        8219.38,
+        1460.11,
+        3652.36
+      ],
+      "bounds_max_um": [
+        10132.6,
+        3301.99,
+        7734.97
+      ]
+    },
+    "SCiw": {
+      "acronym": "SCiw",
+      "id": 17,
+      "name": "Superior colliculus, motor related, intermediate white layer",
+      "rgb": [
+        255,
+        144,
+        255
+      ],
+      "n_vertices": 2266,
+      "n_faces": 4528,
+      "file": "SCiw.npz",
+      "bounds_min_um": [
+        8246.61,
+        1608.4,
+        3873.97
+      ],
+      "bounds_max_um": [
+        10163.9,
+        3375.74,
+        7512.57
+      ]
+    },
+    "SCop": {
+      "acronym": "SCop",
+      "id": 851,
+      "name": "Superior colliculus, optic layer",
+      "rgb": [
+        255,
+        122,
+        255
+      ],
+      "n_vertices": 1654,
+      "n_faces": 3304,
+      "file": "SCop.npz",
+      "bounds_min_um": [
+        8227.28,
+        1328.69,
+        4044.08
+      ],
+      "bounds_max_um": [
+        10168.6,
+        2272.66,
+        7335.89
+      ]
+    },
+    "SCsg": {
+      "acronym": "SCsg",
+      "id": 842,
+      "name": "Superior colliculus, superficial gray layer",
+      "rgb": [
+        255,
+        122,
+        255
+      ],
+      "n_vertices": 1698,
+      "n_faces": 3392,
+      "file": "SCsg.npz",
+      "bounds_min_um": [
+        8303.38,
+        1063.36,
+        4089.55
+      ],
+      "bounds_max_um": [
+        10152.0,
+        2131.0,
+        7296.02
+      ]
+    },
+    "SCzo": {
+      "acronym": "SCzo",
+      "id": 834,
+      "name": "Superior colliculus, zonal layer",
+      "rgb": [
+        255,
+        122,
+        255
+      ],
+      "n_vertices": 2051,
+      "n_faces": 4082,
+      "file": "SCzo.npz",
+      "bounds_min_um": [
+        8264.33,
+        1019.04,
+        4046.51
+      ],
+      "bounds_max_um": [
+        10203.0,
+        2091.2,
+        7343.84
+      ]
+    },
+    "SSp": {
+      "acronym": "SSp",
+      "id": 322,
+      "name": "Primary somatosensory area",
+      "rgb": [
+        24,
+        128,
+        100
+      ],
+      "n_vertices": 8681,
+      "n_faces": 17348,
+      "file": "SSp.npz",
+      "bounds_min_um": [
+        3569.87,
+        366.14,
+        1243.08
+      ],
+      "bounds_max_um": [
+        7896.46,
+        4140.46,
+        10142.4
+      ]
+    },
+    "SSs": {
+      "acronym": "SSs",
+      "id": 378,
+      "name": "Supplemental somatosensory area",
+      "rgb": [
+        24,
+        128,
+        100
+      ],
+      "n_vertices": 4499,
+      "n_faces": 8990,
+      "file": "SSs.npz",
+      "bounds_min_um": [
+        4226.44,
+        1473.88,
+        649.08
+      ],
+      "bounds_max_um": [
+        7920.92,
+        4404.84,
+        10734.2
+      ]
+    },
+    "STR": {
+      "acronym": "STR",
+      "id": 477,
+      "name": "Striatum",
+      "rgb": [
+        152,
+        214,
+        249
+      ],
+      "n_vertices": 17162,
+      "n_faces": 34330,
+      "file": "STR.npz",
+      "bounds_min_um": [
+        3287.4,
+        2509.73,
+        1754.61
+      ],
+      "bounds_max_um": [
+        7667.73,
+        7489.17,
+        9635.88
+      ]
+    },
+    "TEa": {
+      "acronym": "TEa",
+      "id": 541,
+      "name": "Temporal association areas",
+      "rgb": [
+        21,
+        176,
+        179
+      ],
+      "n_vertices": 2462,
+      "n_faces": 4916,
+      "file": "TEa.npz",
+      "bounds_min_um": [
+        6941.52,
+        1804.65,
+        516.29
+      ],
+      "bounds_max_um": [
+        9433.4,
+        4439.75,
+        10860.7
+      ]
+    },
+    "TTd": {
+      "acronym": "TTd",
+      "id": 597,
+      "name": "Taenia tecta, dorsal part",
+      "rgb": [
+        98,
+        208,
+        159
+      ],
+      "n_vertices": 869,
+      "n_faces": 1730,
+      "file": "TTd.npz",
+      "bounds_min_um": [
+        2834.03,
+        3946.52,
+        5119.94
+      ],
+      "bounds_max_um": [
+        4106.58,
+        5497.98,
+        6264.69
+      ]
+    },
+    "VISal": {
+      "acronym": "VISal",
+      "id": 402,
+      "name": "Anterolateral visual area",
+      "rgb": [
+        8,
+        133,
+        140
+      ],
+      "n_vertices": 762,
+      "n_faces": 1516,
+      "file": "VISal.npz",
+      "bounds_min_um": [
+        7849.78,
+        1101.55,
+        1456.25
+      ],
+      "bounds_max_um": [
+        8603.52,
+        2230.72,
+        9907.78
+      ]
+    },
+    "VISam": {
+      "acronym": "VISam",
+      "id": 394,
+      "name": "Anteromedial visual area",
+      "rgb": [
+        8,
+        133,
+        140
+      ],
+      "n_vertices": 808,
+      "n_faces": 1608,
+      "file": "VISam.npz",
+      "bounds_min_um": [
+        7139.02,
+        238.98,
+        3337.62
+      ],
+      "bounds_max_um": [
+        8078.33,
+        1234.78,
+        8023.39
+      ]
+    },
+    "VISli": {
+      "acronym": "VISli",
+      "id": 312782574,
+      "name": "Laterointermediate area",
+      "rgb": [
+        8,
+        133,
+        140
+      ],
+      "n_vertices": 680,
+      "n_faces": 1352,
+      "file": "VISli.npz",
+      "bounds_min_um": [
+        8524.39,
+        1645.71,
+        1427.51
+      ],
+      "bounds_max_um": [
+        9649.69,
+        2600.08,
+        9950.06
+      ]
+    },
+    "VISp": {
+      "acronym": "VISp",
+      "id": 385,
+      "name": "Primary visual area",
+      "rgb": [
+        8,
+        133,
+        140
+      ],
+      "n_vertices": 3532,
+      "n_faces": 7056,
+      "file": "VISp.npz",
+      "bounds_min_um": [
+        7695.14,
+        370.58,
+        2079.14
+      ],
+      "bounds_max_um": [
+        10361.9,
+        2248.81,
+        9300.07
+      ]
+    },
+    "VISpm": {
+      "acronym": "VISpm",
+      "id": 533,
+      "name": "posteromedial visual area",
+      "rgb": [
+        8,
+        133,
+        140
+      ],
+      "n_vertices": 1050,
+      "n_faces": 2092,
+      "file": "VISpm.npz",
+      "bounds_min_um": [
+        7782.59,
+        239.97,
+        3340.25
+      ],
+      "bounds_max_um": [
+        9490.27,
+        1251.06,
+        8030.63
+      ]
+    },
+    "VISrl": {
+      "acronym": "VISrl",
+      "id": 417,
+      "name": "Rostrolateral visual area",
+      "rgb": [
+        0,
+        159,
+        172
+      ],
+      "n_vertices": 1050,
+      "n_faces": 2092,
+      "file": "VISrl.npz",
+      "bounds_min_um": [
+        7181.62,
+        653.94,
+        1876.55
+      ],
+      "bounds_max_um": [
+        8344.42,
+        1886.21,
+        9486.66
+      ]
+    },
+    "ccb": {
+      "acronym": "ccb",
+      "id": 484682516,
+      "name": "corpus callosum, body",
+      "rgb": [
+        204,
+        204,
+        204
+      ],
+      "n_vertices": 6459,
+      "n_faces": 12902,
+      "file": "ccb.npz",
+      "bounds_min_um": [
+        4496.39,
+        1359.43,
+        1770.77
+      ],
+      "bounds_max_um": [
+        7051.85,
+        4326.03,
+        9609.63
+      ]
+    },
+    "scwm": {
+      "acronym": "scwm",
+      "id": 484682512,
+      "name": "supra-callosal cerebral white matter",
+      "rgb": [
+        204,
+        204,
+        204
+      ],
+      "n_vertices": 9247,
+      "n_faces": 17611,
+      "file": "scwm.npz",
+      "bounds_min_um": [
+        3503.24,
+        1201.82,
+        1425.81
+      ],
+      "bounds_max_um": [
+        9520.16,
+        4097.27,
+        9946.78
+      ]
+    }
+  },
+  "missing": [],
+  "decimated": {
+    "file": "root_decimated.npz",
+    "n_vertices": 12334,
+    "n_faces": 24659,
+    "target_fraction": 0.25
+  }
+}

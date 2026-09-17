@@ -1,0 +1,6 @@
+session_id,subject_id,date,genotype,sex,n_units,n_units_qc,n_structures,n_trials,n_blocks,block_modality_sequence,has_opto,task_epoch_start,task_epoch_stop,n_probes,file_size_gb,error
+664851_2023-11-15,664851,2023-11-15,Pvalb-IRES-Cre/wt;Ai32(RCL-ChR2(H134R)_EYFP)/wt,F,3062,1118,24,534,6,aud-vis-aud-vis-aud-vis,False,2389.9172499999995,6044.580980238302,5,7.027,
+668755_2023-08-31,668755,2023-08-31,wt/wt,M,2878,1184,34,524,6,vis-aud-vis-aud-vis-aud,False,2451.8673599999997,6098.958573654007,6,6.969,
+713655_2024-08-09,713655,2024-08-09,Sst-IRES-Cre/wt;Ai32(RCL-ChR2(H134R)_EYFP)/wt,M,3577,1666,21,515,6,aud-vis-aud-vis-aud-vis,False,2399.66534,6207.872650636693,5,7.978,
+742903_2024-10-22,742903,2024-10-22,Vip-IRES-Cre/wt;Ai32(RCL-ChR2(H134R)_EYFP)/wt,F,4446,1973,23,538,6,aud-vis-aud-vis-aud-vis,False,2514.35961,6155.325601399931,6,9.259,
+759434_2025-02-04,759434,2025-02-04,VGAT-ChR2-YFP/wt,M,2285,744,19,545,6,vis-aud-vis-aud-vis-aud,False,2155.69515,5796.812016544398,5,5.904,

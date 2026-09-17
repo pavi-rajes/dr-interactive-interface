@@ -1,0 +1,18 @@
+[PASS] all structure meshes written: 61 structures + root; missing in index: []
+[PASS] root bounds match atlas within 1 um: npz min [-16.8 133.9 485.7] max [13192.5  7564.2 10890.6]
+[PASS] MOs: bbox+100um fraction >= 0.95: 1.000 (n=1150)
+[PASS] MOs: annotation containment >= 0.95: 0.999; median nearest-surface-vertex 300 um (info)
+[PASS] CP: bbox+100um fraction >= 0.95: 1.000 (n=462)
+[PASS] CP: annotation containment >= 0.95: 1.000; median nearest-surface-vertex 243 um (info)
+[PASS] AUDp: bbox+100um fraction >= 0.95: 1.000 (n=312)
+[PASS] AUDp: annotation containment >= 0.95: 1.000; median nearest-surface-vertex 184 um (info)
+[PASS] SSp: bbox+100um fraction >= 0.95: 1.000 (n=639)
+[PASS] SSp: annotation containment >= 0.95: 0.972; median nearest-surface-vertex 326 um (info)
+[PASS] ACAd: bbox+100um fraction >= 0.95: 1.000 (n=157)
+[PASS] ACAd: annotation containment >= 0.95: 0.994; median nearest-surface-vertex 97 um (info)
+[PASS] ORBvl: bbox+100um fraction >= 0.95: 1.000 (n=339)
+[PASS] ORBvl: annotation containment >= 0.95: 1.000; median nearest-surface-vertex 121 um (info)
+[PASS] VISp: bbox+100um fraction >= 0.95: 1.000 (n=57)
+[PASS] VISp: annotation containment >= 0.95: 1.000; median nearest-surface-vertex 89 um (info)
+
+16/16 checks passed

@@ -1,0 +1,1218 @@
+{
+  "generated_at": "2026-09-14T22:30:42+00:00",
+  "data_dir": "/Users/pavir/Code/dr-interactive-interface/nwb_sessions",
+  "task_script_name": "DynamicRouting1",
+  "sessions": {
+    "664851_2023-11-15": {
+      "session_id": "664851_2023-11-15",
+      "file": "/Users/pavir/Code/dr-interactive-interface/nwb_sessions/664851_2023-11-15.nwb",
+      "file_size_gb": 7.027,
+      "nwb_session_id": "664851_2023-11-15",
+      "identifier": "630c5a2f-f92d-4525-bd28-5f7a350ca1f9",
+      "session_start_time": "2023-11-15T12:38:21-08:00",
+      "session_description": "ecephys session (day 3) with behavioral task data (day 103) and video recording of behavior",
+      "subject": {
+        "subject_id": "664851",
+        "genotype": "Pvalb-IRES-Cre/wt;Ai32(RCL-ChR2(H134R)_EYFP)/wt",
+        "sex": "F",
+        "age": "P310D",
+        "strain": "Pvalb-IRES-Cre;Ai32",
+        "species": "Mus musculus"
+      },
+      "units": {
+        "n_units": 3062,
+        "n_units_qc": 1118,
+        "n_units_with_ccf": 3018,
+        "n_structures": 24,
+        "structures": {
+          "ACAd": {
+            "n_units": 111,
+            "n_units_qc": 39
+          },
+          "ACAv": {
+            "n_units": 81,
+            "n_units_qc": 23
+          },
+          "AUDd": {
+            "n_units": 83,
+            "n_units_qc": 52
+          },
+          "AUDp": {
+            "n_units": 340,
+            "n_units_qc": 203
+          },
+          "AUDv": {
+            "n_units": 29,
+            "n_units_qc": 9
+          },
+          "CA1": {
+            "n_units": 184,
+            "n_units_qc": 95
+          },
+          "CA2": {
+            "n_units": 18,
+            "n_units_qc": 9
+          },
+          "CA3": {
+            "n_units": 291,
+            "n_units_qc": 91
+          },
+          "FRP": {
+            "n_units": 306,
+            "n_units_qc": 108
+          },
+          "LSc": {
+            "n_units": 136,
+            "n_units_qc": 54
+          },
+          "LSr": {
+            "n_units": 20,
+            "n_units_qc": 6
+          },
+          "MOB": {
+            "n_units": 202,
+            "n_units_qc": 43
+          },
+          "MOs": {
+            "n_units": 631,
+            "n_units_qc": 137
+          },
+          "OLF": {
+            "n_units": 8,
+            "n_units_qc": 3
+          },
+          "ORBl": {
+            "n_units": 11,
+            "n_units_qc": 6
+          },
+          "ORBvl": {
+            "n_units": 238,
+            "n_units_qc": 89
+          },
+          "SEZ": {
+            "n_units": 1,
+            "n_units_qc": 0
+          },
+          "SF": {
+            "n_units": 2,
+            "n_units_qc": 0
+          },
+          "SSp": {
+            "n_units": 52,
+            "n_units_qc": 28
+          },
+          "SSs": {
+            "n_units": 32,
+            "n_units_qc": 24
+          },
+          "TEa": {
+            "n_units": 75,
+            "n_units_qc": 11
+          },
+          "VISal": {
+            "n_units": 150,
+            "n_units_qc": 77
+          },
+          "VISrl": {
+            "n_units": 17,
+            "n_units_qc": 10
+          },
+          "out of brain": {
+            "n_units": 44,
+            "n_units_qc": 1
+          }
+        }
+      },
+      "trials": {
+        "n_trials": 534,
+        "n_blocks": 6,
+        "block_modality_sequence": [
+          "aud",
+          "vis",
+          "aud",
+          "vis",
+          "aud",
+          "vis"
+        ],
+        "n_block_switches": 5,
+        "has_opto": false,
+        "n_opto_trials": 0,
+        "stim_names": [
+          "catch",
+          "sound1",
+          "sound2",
+          "vis1",
+          "vis2"
+        ],
+        "first_stim_start_time": 2394.93537,
+        "last_stim_start_time": 6038.03933
+      },
+      "epochs": [
+        {
+          "script_name": "RFMapping",
+          "start_time": 83.46706999999998,
+          "stop_time": 954.1973100000001
+        },
+        {
+          "script_name": "OptoTagging",
+          "start_time": 965.72392,
+          "stop_time": 1139.85261264691
+        },
+        {
+          "script_name": "Spontaneous",
+          "start_time": 1149.47777,
+          "stop_time": 1752.3327634008372
+        },
+        {
+          "script_name": "SpontaneousRewards",
+          "start_time": 1775.41864,
+          "stop_time": 2378.3741973246197
+        },
+        {
+          "script_name": "DynamicRouting1",
+          "start_time": 2389.9172499999995,
+          "stop_time": 6044.580980238302
+        },
+        {
+          "script_name": "SpontaneousRewards",
+          "start_time": 6055.74042,
+          "stop_time": 6658.7291728677055
+        },
+        {
+          "script_name": "OptoTagging",
+          "start_time": 6669.43822,
+          "stop_time": 6845.369009400167
+        }
+      ],
+      "task_epoch_start": 2389.9172499999995,
+      "task_epoch_stop": 6044.580980238302,
+      "n_task_epochs": 1,
+      "performance": [
+        {
+          "block_index": 0,
+          "rewarded_modality": "aud",
+          "cross_modality_dprime": 2.4963740699086325,
+          "hit_rate": 0.9583333333333334,
+          "false_alarm_rate": 0.21818181818181817
+        },
+        {
+          "block_index": 1,
+          "rewarded_modality": "vis",
+          "cross_modality_dprime": 2.425175821448251,
+          "hit_rate": 0.96,
+          "false_alarm_rate": 0.15
+        },
+        {
+          "block_index": 2,
+          "rewarded_modality": "aud",
+          "cross_modality_dprime": 3.916480778053474,
+          "hit_rate": 1.0,
+          "false_alarm_rate": 0.19607843137254902
+        },
+        {
+          "block_index": 3,
+          "rewarded_modality": "vis",
+          "cross_modality_dprime": 2.6085419984329206,
+          "hit_rate": 1.0,
+          "false_alarm_rate": 0.12280701754385964
+        },
+        {
+          "block_index": 4,
+          "rewarded_modality": "aud",
+          "cross_modality_dprime": 3.2712057208483616,
+          "hit_rate": 1.0,
+          "false_alarm_rate": 0.07547169811320754
+        },
+        {
+          "block_index": 5,
+          "rewarded_modality": "vis",
+          "cross_modality_dprime": 2.5612346444094287,
+          "hit_rate": 1.0,
+          "false_alarm_rate": 0.1724137931034483
+        }
+      ],
+      "electrodes": {
+        "n_electrodes": 1920,
+        "n_probes": 5,
+        "probes": [
+          "probeA",
+          "probeB",
+          "probeC",
+          "probeD",
+          "probeE"
+        ]
+      }
+    },
+    "668755_2023-08-31": {
+      "session_id": "668755_2023-08-31",
+      "file": "/Users/pavir/Code/dr-interactive-interface/nwb_sessions/668755_2023-08-31.nwb",
+      "file_size_gb": 6.969,
+      "nwb_session_id": "668755_2023-08-31",
+      "identifier": "aecb9b6e-cfe1-4125-a88b-19ef487e969b",
+      "session_start_time": "2023-08-31T12:33:31-07:00",
+      "session_description": "ecephys session (day 4) with behavioral task data (day 61) and video recording of behavior",
+      "subject": {
+        "subject_id": "668755",
+        "genotype": "wt/wt",
+        "sex": "M",
+        "age": "P206D",
+        "strain": "C57BL6J(NP)",
+        "species": "Mus musculus"
+      },
+      "units": {
+        "n_units": 2878,
+        "n_units_qc": 1184,
+        "n_units_with_ccf": 2829,
+        "n_structures": 34,
+        "structures": {
+          "ACAd": {
+            "n_units": 83,
+            "n_units_qc": 41
+          },
+          "ACAv": {
+            "n_units": 261,
+            "n_units_qc": 153
+          },
+          "AON": {
+            "n_units": 83,
+            "n_units_qc": 33
+          },
+          "CP": {
+            "n_units": 249,
+            "n_units_qc": 87
+          },
+          "DP": {
+            "n_units": 33,
+            "n_units_qc": 18
+          },
+          "FRP": {
+            "n_units": 14,
+            "n_units_qc": 7
+          },
+          "HPF": {
+            "n_units": 34,
+            "n_units_qc": 11
+          },
+          "LGv": {
+            "n_units": 59,
+            "n_units_qc": 3
+          },
+          "MB": {
+            "n_units": 27,
+            "n_units_qc": 8
+          },
+          "MOp": {
+            "n_units": 398,
+            "n_units_qc": 166
+          },
+          "MOs": {
+            "n_units": 571,
+            "n_units_qc": 241
+          },
+          "MPT": {
+            "n_units": 16,
+            "n_units_qc": 4
+          },
+          "NOT": {
+            "n_units": 10,
+            "n_units_qc": 1
+          },
+          "NPC": {
+            "n_units": 1,
+            "n_units_qc": 0
+          },
+          "OLF": {
+            "n_units": 21,
+            "n_units_qc": 13
+          },
+          "ORBl": {
+            "n_units": 44,
+            "n_units_qc": 32
+          },
+          "PAG": {
+            "n_units": 5,
+            "n_units_qc": 3
+          },
+          "PPT": {
+            "n_units": 25,
+            "n_units_qc": 9
+          },
+          "RSPagl": {
+            "n_units": 11,
+            "n_units_qc": 3
+          },
+          "RSPd": {
+            "n_units": 7,
+            "n_units_qc": 6
+          },
+          "RSPv": {
+            "n_units": 92,
+            "n_units_qc": 52
+          },
+          "SCdg": {
+            "n_units": 22,
+            "n_units_qc": 9
+          },
+          "SCdw": {
+            "n_units": 3,
+            "n_units_qc": 1
+          },
+          "SCig": {
+            "n_units": 44,
+            "n_units_qc": 13
+          },
+          "SCiw": {
+            "n_units": 48,
+            "n_units_qc": 15
+          },
+          "SCop": {
+            "n_units": 24,
+            "n_units_qc": 5
+          },
+          "SCsg": {
+            "n_units": 56,
+            "n_units_qc": 9
+          },
+          "SCzo": {
+            "n_units": 3,
+            "n_units_qc": 2
+          },
+          "SSp": {
+            "n_units": 305,
+            "n_units_qc": 96
+          },
+          "TTd": {
+            "n_units": 18,
+            "n_units_qc": 11
+          },
+          "VISam": {
+            "n_units": 136,
+            "n_units_qc": 73
+          },
+          "VISp": {
+            "n_units": 118,
+            "n_units_qc": 57
+          },
+          "VISpm": {
+            "n_units": 8,
+            "n_units_qc": 2
+          },
+          "out of brain": {
+            "n_units": 49,
+            "n_units_qc": 0
+          }
+        }
+      },
+      "trials": {
+        "n_trials": 524,
+        "n_blocks": 6,
+        "block_modality_sequence": [
+          "vis",
+          "aud",
+          "vis",
+          "aud",
+          "vis",
+          "aud"
+        ],
+        "n_block_switches": 5,
+        "has_opto": false,
+        "n_opto_trials": 0,
+        "stim_names": [
+          "catch",
+          "sound1",
+          "sound2",
+          "vis1",
+          "vis2"
+        ],
+        "first_stim_start_time": 2461.80925,
+        "last_stim_start_time": 6091.79956
+      },
+      "epochs": [
+        {
+          "script_name": "RFMapping",
+          "start_time": 60.29648999999999,
+          "stop_time": 920.41747
+        },
+        {
+          "script_name": "OptoTagging",
+          "start_time": 937.04822,
+          "stop_time": 1164.6055156190068
+        },
+        {
+          "script_name": "Spontaneous",
+          "start_time": 1179.26794,
+          "stop_time": 1781.956514473119
+        },
+        {
+          "script_name": "SpontaneousRewards",
+          "start_time": 1836.43551,
+          "stop_time": 2436.922566587588
+        },
+        {
+          "script_name": "DynamicRouting1",
+          "start_time": 2451.8673599999997,
+          "stop_time": 6098.958573654007
+        },
+        {
+          "script_name": "SpontaneousRewards",
+          "start_time": 6114.73863,
+          "stop_time": 6715.225642011223
+        },
+        {
+          "script_name": "OptoTagging",
+          "start_time": 6731.33851,
+          "stop_time": 6960.547817803831
+        }
+      ],
+      "task_epoch_start": 2451.8673599999997,
+      "task_epoch_stop": 6098.958573654007,
+      "n_task_epochs": 1,
+      "performance": [
+        {
+          "block_index": 0,
+          "rewarded_modality": "vis",
+          "cross_modality_dprime": 1.297563916600799,
+          "hit_rate": 1.0,
+          "false_alarm_rate": 0.3148148148148148
+        },
+        {
+          "block_index": 1,
+          "rewarded_modality": "aud",
+          "cross_modality_dprime": 1.5825720407115,
+          "hit_rate": 1.0,
+          "false_alarm_rate": 0.40816326530612246
+        },
+        {
+          "block_index": 2,
+          "rewarded_modality": "vis",
+          "cross_modality_dprime": 2.48447620992728,
+          "hit_rate": 1.0,
+          "false_alarm_rate": 0.10526315789473684
+        },
+        {
+          "block_index": 3,
+          "rewarded_modality": "aud",
+          "cross_modality_dprime": 1.6906216295848986,
+          "hit_rate": 0.9545454545454546,
+          "false_alarm_rate": 0.28846153846153844
+        },
+        {
+          "block_index": 4,
+          "rewarded_modality": "vis",
+          "cross_modality_dprime": 1.4783172929864457,
+          "hit_rate": 0.9583333333333334,
+          "false_alarm_rate": 0.288135593220339
+        },
+        {
+          "block_index": 5,
+          "rewarded_modality": "aud",
+          "cross_modality_dprime": 2.5781494233398634,
+          "hit_rate": 1.0,
+          "false_alarm_rate": 0.20689655172413793
+        }
+      ],
+      "electrodes": {
+        "n_electrodes": 2304,
+        "n_probes": 6,
+        "probes": [
+          "probeA",
+          "probeB",
+          "probeC",
+          "probeD",
+          "probeE",
+          "probeF"
+        ]
+      }
+    },
+    "713655_2024-08-09": {
+      "session_id": "713655_2024-08-09",
+      "file": "/Users/pavir/Code/dr-interactive-interface/nwb_sessions/713655_2024-08-09.nwb",
+      "file_size_gb": 7.978,
+      "nwb_session_id": "713655_2024-08-09",
+      "identifier": "aa7d55be-2a73-4a57-8c62-43cb9639cc33",
+      "session_start_time": "2024-08-09T10:41:47-07:00",
+      "session_description": "ecephys session (day 5) with behavioral task data (day 107) and video recording of behavior",
+      "subject": {
+        "subject_id": "713655",
+        "genotype": "Sst-IRES-Cre/wt;Ai32(RCL-ChR2(H134R)_EYFP)/wt",
+        "sex": "M",
+        "age": "P260D",
+        "strain": "Sst-IRES-Cre;Ai32",
+        "species": "Mus musculus"
+      },
+      "units": {
+        "n_units": 3577,
+        "n_units_qc": 1666,
+        "n_units_with_ccf": 3559,
+        "n_structures": 21,
+        "structures": {
+          "ACAd": {
+            "n_units": 19,
+            "n_units_qc": 7
+          },
+          "AD": {
+            "n_units": 130,
+            "n_units_qc": 17
+          },
+          "AUDp": {
+            "n_units": 201,
+            "n_units_qc": 109
+          },
+          "AUDpo": {
+            "n_units": 55,
+            "n_units_qc": 23
+          },
+          "AUDv": {
+            "n_units": 176,
+            "n_units_qc": 77
+          },
+          "AV": {
+            "n_units": 30,
+            "n_units_qc": 11
+          },
+          "CP": {
+            "n_units": 288,
+            "n_units_qc": 142
+          },
+          "ECT5": {
+            "n_units": 162,
+            "n_units_qc": 114
+          },
+          "ECT6a": {
+            "n_units": 120,
+            "n_units_qc": 86
+          },
+          "LSc": {
+            "n_units": 47,
+            "n_units_qc": 28
+          },
+          "LSr": {
+            "n_units": 310,
+            "n_units_qc": 183
+          },
+          "MOp": {
+            "n_units": 487,
+            "n_units_qc": 210
+          },
+          "MOs": {
+            "n_units": 490,
+            "n_units_qc": 188
+          },
+          "PERI": {
+            "n_units": 39,
+            "n_units_qc": 16
+          },
+          "SSp": {
+            "n_units": 122,
+            "n_units_qc": 38
+          },
+          "SSs": {
+            "n_units": 585,
+            "n_units_qc": 271
+          },
+          "TEa": {
+            "n_units": 234,
+            "n_units_qc": 117
+          },
+          "VISl": {
+            "n_units": 1,
+            "n_units_qc": 0
+          },
+          "VISli": {
+            "n_units": 60,
+            "n_units_qc": 29
+          },
+          "VL": {
+            "n_units": 3,
+            "n_units_qc": 0
+          },
+          "out of brain": {
+            "n_units": 18,
+            "n_units_qc": 0
+          }
+        }
+      },
+      "trials": {
+        "n_trials": 515,
+        "n_blocks": 6,
+        "block_modality_sequence": [
+          "aud",
+          "vis",
+          "aud",
+          "vis",
+          "aud",
+          "vis"
+        ],
+        "n_block_switches": 5,
+        "has_opto": false,
+        "n_opto_trials": 0,
+        "stim_names": [
+          "catch",
+          "sound1",
+          "sound2",
+          "vis1",
+          "vis2"
+        ],
+        "first_stim_start_time": 2404.93261,
+        "last_stim_start_time": 6201.75083
+      },
+      "epochs": [
+        {
+          "script_name": "RFMapping",
+          "start_time": 46.87727,
+          "stop_time": 917.5737625607622
+        },
+        {
+          "script_name": "OptoTagging",
+          "start_time": 928.2152100000001,
+          "stop_time": 1163.07926675369
+        },
+        {
+          "script_name": "Spontaneous",
+          "start_time": 1172.33761,
+          "stop_time": 1775.4089362014556
+        },
+        {
+          "script_name": "SpontaneousRewards",
+          "start_time": 1786.1009900000001,
+          "stop_time": 2389.106478284488
+        },
+        {
+          "script_name": "DynamicRouting1",
+          "start_time": 2399.66534,
+          "stop_time": 6207.872650636693
+        },
+        {
+          "script_name": "SpontaneousRewards",
+          "start_time": 6218.61508,
+          "stop_time": 6821.686969773877
+        },
+        {
+          "script_name": "Spontaneous",
+          "start_time": 6832.429349999999,
+          "stop_time": 7435.551216193029
+        },
+        {
+          "script_name": "OptoTagging",
+          "start_time": 7445.50961,
+          "stop_time": 7679.2553027825925
+        }
+      ],
+      "task_epoch_start": 2399.66534,
+      "task_epoch_stop": 6207.872650636693,
+      "n_task_epochs": 1,
+      "performance": [
+        {
+          "block_index": 0,
+          "rewarded_modality": "aud",
+          "cross_modality_dprime": 2.299391760611654,
+          "hit_rate": 1.0,
+          "false_alarm_rate": 0.42857142857142855
+        },
+        {
+          "block_index": 1,
+          "rewarded_modality": "vis",
+          "cross_modality_dprime": 3.688617582104998,
+          "hit_rate": 0.96,
+          "false_alarm_rate": 0.03508771929824561
+        },
+        {
+          "block_index": 2,
+          "rewarded_modality": "aud",
+          "cross_modality_dprime": 3.3565289334612016,
+          "hit_rate": 0.9565217391304348,
+          "false_alarm_rate": 0.13333333333333333
+        },
+        {
+          "block_index": 3,
+          "rewarded_modality": "vis",
+          "cross_modality_dprime": 2.6580431956865995,
+          "hit_rate": 0.9545454545454546,
+          "false_alarm_rate": 0.07547169811320754
+        },
+        {
+          "block_index": 4,
+          "rewarded_modality": "aud",
+          "cross_modality_dprime": 2.468382998300419,
+          "hit_rate": 0.9,
+          "false_alarm_rate": 0.058823529411764705
+        },
+        {
+          "block_index": 5,
+          "rewarded_modality": "vis",
+          "cross_modality_dprime": 2.5919029930654514,
+          "hit_rate": 0.92,
+          "false_alarm_rate": 0.037037037037037035
+        }
+      ],
+      "electrodes": {
+        "n_electrodes": 1920,
+        "n_probes": 5,
+        "probes": [
+          "probeA",
+          "probeB",
+          "probeC",
+          "probeE",
+          "probeF"
+        ]
+      }
+    },
+    "742903_2024-10-22": {
+      "session_id": "742903_2024-10-22",
+      "file": "/Users/pavir/Code/dr-interactive-interface/nwb_sessions/742903_2024-10-22.nwb",
+      "file_size_gb": 9.259,
+      "nwb_session_id": "742903_2024-10-22",
+      "identifier": "49659c4a-56a6-4544-b381-786c4d8c5040",
+      "session_start_time": "2024-10-22T10:58:35-07:00",
+      "session_description": "ecephys session (day 2) with behavioral task data (day 46) and video recording of behavior",
+      "subject": {
+        "subject_id": "742903",
+        "genotype": "Vip-IRES-Cre/wt;Ai32(RCL-ChR2(H134R)_EYFP)/wt",
+        "sex": "F",
+        "age": "P159D",
+        "strain": "Vip-IRES-Cre;Ai32",
+        "species": "Mus musculus"
+      },
+      "units": {
+        "n_units": 4446,
+        "n_units_qc": 1973,
+        "n_units_with_ccf": 4392,
+        "n_structures": 23,
+        "structures": {
+          "ACAd": {
+            "n_units": 134,
+            "n_units_qc": 67
+          },
+          "ACAv": {
+            "n_units": 48,
+            "n_units_qc": 31
+          },
+          "AIp": {
+            "n_units": 19,
+            "n_units_qc": 0
+          },
+          "CA1": {
+            "n_units": 40,
+            "n_units_qc": 13
+          },
+          "CA3": {
+            "n_units": 51,
+            "n_units_qc": 7
+          },
+          "CP": {
+            "n_units": 265,
+            "n_units_qc": 101
+          },
+          "DG": {
+            "n_units": 8,
+            "n_units_qc": 2
+          },
+          "FRP": {
+            "n_units": 28,
+            "n_units_qc": 17
+          },
+          "GU": {
+            "n_units": 103,
+            "n_units_qc": 54
+          },
+          "ILA": {
+            "n_units": 279,
+            "n_units_qc": 172
+          },
+          "LGv": {
+            "n_units": 36,
+            "n_units_qc": 0
+          },
+          "LSr": {
+            "n_units": 86,
+            "n_units_qc": 46
+          },
+          "MOs": {
+            "n_units": 1116,
+            "n_units_qc": 437
+          },
+          "OLF": {
+            "n_units": 17,
+            "n_units_qc": 11
+          },
+          "ORBl": {
+            "n_units": 132,
+            "n_units_qc": 75
+          },
+          "ORBm": {
+            "n_units": 157,
+            "n_units_qc": 79
+          },
+          "ORBvl": {
+            "n_units": 433,
+            "n_units_qc": 250
+          },
+          "PL": {
+            "n_units": 98,
+            "n_units_qc": 53
+          },
+          "SSp": {
+            "n_units": 857,
+            "n_units_qc": 324
+          },
+          "SSs": {
+            "n_units": 169,
+            "n_units_qc": 118
+          },
+          "TTd": {
+            "n_units": 240,
+            "n_units_qc": 96
+          },
+          "VISal": {
+            "n_units": 76,
+            "n_units_qc": 20
+          },
+          "out of brain": {
+            "n_units": 54,
+            "n_units_qc": 0
+          }
+        }
+      },
+      "trials": {
+        "n_trials": 538,
+        "n_blocks": 6,
+        "block_modality_sequence": [
+          "aud",
+          "vis",
+          "aud",
+          "vis",
+          "aud",
+          "vis"
+        ],
+        "n_block_switches": 5,
+        "has_opto": false,
+        "n_opto_trials": 0,
+        "stim_names": [
+          "catch",
+          "sound1",
+          "sound2",
+          "vis1",
+          "vis2"
+        ],
+        "first_stim_start_time": 2521.31188,
+        "last_stim_start_time": 6147.41574
+      },
+      "epochs": [
+        {
+          "script_name": "RFMapping",
+          "start_time": 44.791450000000005,
+          "stop_time": 915.5044327605
+        },
+        {
+          "script_name": "OptoTagging",
+          "start_time": 925.76399,
+          "stop_time": 1276.573300794633
+        },
+        {
+          "script_name": "Spontaneous",
+          "start_time": 1286.7989400000001,
+          "stop_time": 1889.936699151203
+        },
+        {
+          "script_name": "SpontaneousRewards",
+          "start_time": 1900.7289,
+          "stop_time": 2503.800740151999
+        },
+        {
+          "script_name": "DynamicRouting1",
+          "start_time": 2514.35961,
+          "stop_time": 6155.325601399931
+        },
+        {
+          "script_name": "SpontaneousRewards",
+          "start_time": 6166.134779999999,
+          "stop_time": 6769.256587518612
+        },
+        {
+          "script_name": "Spontaneous",
+          "start_time": 6779.73208,
+          "stop_time": 7382.853794032261
+        },
+        {
+          "script_name": "OptoTagging",
+          "start_time": 7393.26257,
+          "stop_time": 7741.754330900844
+        }
+      ],
+      "task_epoch_start": 2514.35961,
+      "task_epoch_stop": 6155.325601399931,
+      "n_task_epochs": 1,
+      "performance": [
+        {
+          "block_index": 0,
+          "rewarded_modality": "aud",
+          "cross_modality_dprime": 3.612305018606193,
+          "hit_rate": 1.0,
+          "false_alarm_rate": 0.07547169811320754
+        },
+        {
+          "block_index": 1,
+          "rewarded_modality": "vis",
+          "cross_modality_dprime": 2.5552824516124693,
+          "hit_rate": 0.96,
+          "false_alarm_rate": 0.06896551724137931
+        },
+        {
+          "block_index": 2,
+          "rewarded_modality": "aud",
+          "cross_modality_dprime": 2.0867242116239924,
+          "hit_rate": 0.96,
+          "false_alarm_rate": 0.13793103448275862
+        },
+        {
+          "block_index": 3,
+          "rewarded_modality": "vis",
+          "cross_modality_dprime": 2.7871194607459593,
+          "hit_rate": 0.96,
+          "false_alarm_rate": 0.06557377049180328
+        },
+        {
+          "block_index": 4,
+          "rewarded_modality": "aud",
+          "cross_modality_dprime": 2.6866231258542332,
+          "hit_rate": 0.92,
+          "false_alarm_rate": 0.1
+        },
+        {
+          "block_index": 5,
+          "rewarded_modality": "vis",
+          "cross_modality_dprime": 0.7791232058101569,
+          "hit_rate": 0.5416666666666666,
+          "false_alarm_rate": 0.08620689655172414
+        }
+      ],
+      "electrodes": {
+        "n_electrodes": 2304,
+        "n_probes": 6,
+        "probes": [
+          "probeA",
+          "probeB",
+          "probeC",
+          "probeD",
+          "probeE",
+          "probeF"
+        ]
+      }
+    },
+    "759434_2025-02-04": {
+      "session_id": "759434_2025-02-04",
+      "file": "/Users/pavir/Code/dr-interactive-interface/nwb_sessions/759434_2025-02-04.nwb",
+      "file_size_gb": 5.904,
+      "nwb_session_id": "759434_2025-02-04",
+      "identifier": "eeaaee89-46bf-4ca5-840c-b0148002d2c7",
+      "session_start_time": "2025-02-04T12:27:22-08:00",
+      "session_description": "ecephys session (day 2) with behavioral task data (day 51) and video recording of behavior",
+      "subject": {
+        "subject_id": "759434",
+        "genotype": "VGAT-ChR2-YFP/wt",
+        "sex": "M",
+        "age": "P177D",
+        "strain": "VGAT-ChR2-YFP(ND)",
+        "species": "Mus musculus"
+      },
+      "units": {
+        "n_units": 2285,
+        "n_units_qc": 744,
+        "n_units_with_ccf": 2271,
+        "n_structures": 19,
+        "structures": {
+          "ACAd": {
+            "n_units": 7,
+            "n_units_qc": 3
+          },
+          "CA1": {
+            "n_units": 47,
+            "n_units_qc": 18
+          },
+          "CA3": {
+            "n_units": 192,
+            "n_units_qc": 50
+          },
+          "CP": {
+            "n_units": 442,
+            "n_units_qc": 132
+          },
+          "DG": {
+            "n_units": 2,
+            "n_units_qc": 1
+          },
+          "DP": {
+            "n_units": 117,
+            "n_units_qc": 59
+          },
+          "ILA": {
+            "n_units": 153,
+            "n_units_qc": 62
+          },
+          "MOs": {
+            "n_units": 598,
+            "n_units_qc": 147
+          },
+          "OLF": {
+            "n_units": 8,
+            "n_units_qc": 3
+          },
+          "PL": {
+            "n_units": 108,
+            "n_units_qc": 46
+          },
+          "SSp": {
+            "n_units": 460,
+            "n_units_qc": 153
+          },
+          "STR": {
+            "n_units": 5,
+            "n_units_qc": 1
+          },
+          "TEa": {
+            "n_units": 16,
+            "n_units_qc": 4
+          },
+          "TTd": {
+            "n_units": 87,
+            "n_units_qc": 58
+          },
+          "VISl": {
+            "n_units": 2,
+            "n_units_qc": 0
+          },
+          "VISli": {
+            "n_units": 22,
+            "n_units_qc": 5
+          },
+          "ccb": {
+            "n_units": 4,
+            "n_units_qc": 1
+          },
+          "out of brain": {
+            "n_units": 14,
+            "n_units_qc": 0
+          },
+          "scwm": {
+            "n_units": 1,
+            "n_units_qc": 1
+          }
+        }
+      },
+      "trials": {
+        "n_trials": 545,
+        "n_blocks": 6,
+        "block_modality_sequence": [
+          "vis",
+          "aud",
+          "vis",
+          "aud",
+          "vis",
+          "aud"
+        ],
+        "n_block_switches": 5,
+        "has_opto": false,
+        "n_opto_trials": 0,
+        "stim_names": [
+          "catch",
+          "sound1",
+          "sound2",
+          "vis1",
+          "vis2"
+        ],
+        "first_stim_start_time": 2160.4157399999995,
+        "last_stim_start_time": 5791.0738599999995
+      },
+      "epochs": [
+        {
+          "script_name": "RFMapping",
+          "start_time": 45.6274,
+          "stop_time": 916.4908156665985
+        },
+        {
+          "script_name": "Spontaneous",
+          "start_time": 927.69937,
+          "stop_time": 1530.8719743983
+        },
+        {
+          "script_name": "SpontaneousRewards",
+          "start_time": 1541.98091,
+          "stop_time": 2145.08647735439
+        },
+        {
+          "script_name": "DynamicRouting1",
+          "start_time": 2155.69515,
+          "stop_time": 5796.812016544398
+        },
+        {
+          "script_name": "SpontaneousRewards",
+          "start_time": 5806.6870499999995,
+          "stop_time": 6409.775444836056
+        },
+        {
+          "script_name": "Spontaneous",
+          "start_time": 6420.33438,
+          "stop_time": 7023.406068972304
+        }
+      ],
+      "task_epoch_start": 2155.69515,
+      "task_epoch_stop": 5796.812016544398,
+      "n_task_epochs": 1,
+      "performance": [
+        {
+          "block_index": 0,
+          "rewarded_modality": "vis",
+          "cross_modality_dprime": 3.6816877586528607,
+          "hit_rate": 1.0,
+          "false_alarm_rate": 0.016666666666666666
+        },
+        {
+          "block_index": 1,
+          "rewarded_modality": "aud",
+          "cross_modality_dprime": 1.8898229543741656,
+          "hit_rate": 0.9545454545454546,
+          "false_alarm_rate": 0.2807017543859649
+        },
+        {
+          "block_index": 2,
+          "rewarded_modality": "vis",
+          "cross_modality_dprime": 3.688617582104998,
+          "hit_rate": 0.96,
+          "false_alarm_rate": 0.03508771929824561
+        },
+        {
+          "block_index": 3,
+          "rewarded_modality": "aud",
+          "cross_modality_dprime": 2.4985918539140926,
+          "hit_rate": 1.0,
+          "false_alarm_rate": 0.22807017543859648
+        },
+        {
+          "block_index": 4,
+          "rewarded_modality": "vis",
+          "cross_modality_dprime": 3.6986025375832954,
+          "hit_rate": 1.0,
+          "false_alarm_rate": 0.03278688524590164
+        },
+        {
+          "block_index": 5,
+          "rewarded_modality": "aud",
+          "cross_modality_dprime": 3.1213194345099637,
+          "hit_rate": 1.0,
+          "false_alarm_rate": 0.09836065573770492
+        }
+      ],
+      "electrodes": {
+        "n_electrodes": 1920,
+        "n_probes": 5,
+        "probes": [
+          "probeB",
+          "probeC",
+          "probeD",
+          "probeE",
+          "probeF"
+        ]
+      }
+    }
+  }
+}

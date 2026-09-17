@@ -1,0 +1,119 @@
+version: '1.0'
+documents:
+- uuid: gsf4iX1H0m
+  name: Create code/ and data/precomputed/ layout, a config module exposing DATA_DIR,
+    and a reproducible script that scans all NWB sessions into a session/unit manifest.
+  mime_type: text/markdown
+  url: file:///Users/pavir/Code/dr-interactive-interface/work/project-scaffold-and-inventory/README.md
+  summary: Establish the reproducible project layout and a data inventory. Create
+    code/ and data/precomputed/ directories, and a small config module (code/config.py)
+    that exposes DATA_DIR (defaulting to nwb_sessions/ at the repo root, overridable
+    via an environment variable) and PRECOMPUTED_DIR (data/precomputed/). Add a dependency
+    manifest listing pynwb/h5py, numpy, pandas, pyarrow, scipy, plotly, and shiny.
+  tags:
+  - asta-assistant
+  - work
+  - project-scaffold-and-inventory
+  created_at: '2026-09-14T22:33:59.916371+00:00'
+  modified_at: '2026-09-14T22:33:59.916371+00:00'
+  extra: null
+- uuid: ImsMVRAdlk
+  name: Extract stim-aligned spike times per trial with block labels for QC-passing
+    units into compact per-session files.
+  mime_type: text/markdown
+  url: file:///Users/pavir/Code/dr-interactive-interface/work/precompute-aligned-spikes/README.md
+  summary: Produce the compact spike data the Shiny app will read instead of the multi-GB
+    NWB files. For each session, for every unit passing default_qc, extract spike
+    times aligned to stim_start_time for every trial in the DynamicRouting task epoch
+    within a -2.0 to +3.0 s window. Store per-session units, trials, and aligned-spikes
+    parquet tables under data/precomputed/<session_id>/.
+  tags:
+  - asta-assistant
+  - work
+  - precompute-aligned-spikes
+  created_at: '2026-09-14T22:42:23.488938+00:00'
+  modified_at: '2026-09-14T22:42:23.488938+00:00'
+  extra: null
+- uuid: QnfIRbjMQv
+  name: Per unit, test pre-stimulus baseline rate in aud vs vis blocks; output a table
+    with CCF coords, structure, effect size, and significance for tab 1.
+  mime_type: text/markdown
+  url: file:///Users/pavir/Code/dr-interactive-interface/work/context-baseline-shift-analysis/README.md
+  summary: Identify units whose baseline (pre-stimulus) firing rate depends on task
+    context using a detrended chunk-permutation test with BH correction; outputs context_baseline_shifts.parquet
+    (per unit, is_robust default flag) and per-region summaries.
+  tags:
+  - asta-assistant
+  - work
+  - context-baseline-shift-analysis
+  created_at: '2026-09-14T23:06:40.138508+00:00'
+  modified_at: '2026-09-14T23:06:40.138508+00:00'
+  extra: null
+- uuid: vX2NdZKPxB
+  name: Fetch the Allen CCF root brain mesh into data/precomputed and build a reusable
+    plotly 3D brain figure with overlaid unit dots.
+  mime_type: text/markdown
+  url: file:///Users/pavir/Code/dr-interactive-interface/work/ccf-brain-3d-component/README.md
+  summary: 'Provide the 3D mouse brain used on the right side of both tabs: export
+    Allen CCF meshes via brainglobe-atlasapi into data/precomputed/ccf_meshes and
+    build brain3d.py with a plotly figure function (translucent brain, region meshes,
+    unit dots, selected-unit highlight) and a verified coordinate convention.'
+  tags:
+  - asta-assistant
+  - work
+  - ccf-brain-3d-component
+  created_at: '2026-09-14T23:21:13.396361+00:00'
+  modified_at: '2026-09-14T23:21:13.396361+00:00'
+  extra: null
+- uuid: eWKXigAHKG
+  name: Per unit, compare early post-switch trials vs late-block trials in both switch
+    directions; output a table of rule-updating units for tab 2.
+  mime_type: text/markdown
+  url: file:///Users/pavir/Code/dr-interactive-interface/work/rule-change-unit-analysis/README.md
+  summary: Identify units that respond specifically to rule changes (block switches)
+    by contrasting early vs late trials within switch blocks, per direction and pooled,
+    in baseline and evoked windows, with a detrended stratified chunk-permutation
+    test; outputs rule_change_units.parquet (is_rule_updating default flag), switch-aligned
+    profiles and region summaries.
+  tags:
+  - asta-assistant
+  - work
+  - rule-change-unit-analysis
+  created_at: '2026-09-14T23:26:33.887458+00:00'
+  modified_at: '2026-09-14T23:26:33.887458+00:00'
+  extra: null
+- uuid: aacueifDSs
+  name: 'Build the Shiny app with both tabs wired to precomputed tables: selectors,
+    3D brain, raster, and PSTH plots.'
+  mime_type: text/markdown
+  url: file:///Users/pavir/Code/dr-interactive-interface/work/shiny-app-tabs/README.md
+  summary: 'Python Shiny application (code/app.py) with two tabs: context-dependent
+    baseline shifts and rule-change units. Left: session/region/unit selectors, analysis
+    window, rasters and PSTHs per context, per-trial rates or switch-aligned profiles.
+    Right: interactive 3D CCF brain with flagged units and click-to-select. Reads
+    only precomputed artifacts.'
+  tags:
+  - asta-assistant
+  - work
+  - shiny-app-tabs
+  created_at: '2026-09-14T23:40:57.854000+00:00'
+  modified_at: '2026-09-14T23:40:57.854000+00:00'
+  extra: null
+- uuid: lyDItk0IFU
+  name: Revise tab 2 to the scientist's phase definitions, organise by block context,
+    Kruskal-Wallis + post-hoc trial-shuffle test, redesigned plots and layout.
+  mime_type: text/markdown
+  url: file:///Users/pavir/Code/dr-interactive-interface/work/rule-change-windows-v2/README.md
+  summary: 'Instruction = trials 0-4, early = 5-14, late = last 10 of each block;
+    context = rewarded modality. Rule-updating unit = instruction mean rate > early
+    and > late (default set, 3,532 units); Kruskal-Wallis with within-block trial-label-shuffle
+    null plus post-hoc contrasts as optional tiers (841 at p<0.05); BH on hold. App:
+    sidebar layout, block timeline, all-blocks raster with context labels, instruction/early/late
+    PSTH, live permutation null, region table with null expectation.'
+  tags:
+  - asta-assistant
+  - work
+  - rule-change-windows-v2
+  created_at: '2026-09-15T18:55:43.311423+00:00'
+  modified_at: '2026-09-15T18:55:43.311423+00:00'
+  extra: null

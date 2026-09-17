@@ -1,0 +1,13 @@
+# raw data (multi-GB NWB files) — location configurable via DR_DATA_DIR
+nwb_sessions/*.nwb
+
+# large precomputed spike tables (~250 MB); regenerate with code/precompute_aligned_spikes.py
+data/precomputed/*/aligned_spikes.parquet
+
+# python / OS
+__pycache__/
+*.pyc
+.DS_Store
+
+# tool state
+.pier/

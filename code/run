@@ -1,0 +1,32 @@
+#!/usr/bin/env bash
+# Code Ocean capsule entrypoint: reproduce every precomputed artifact from the raw NWB sessions.
+#
+#   DR_DATA_DIR         directory with the *.nwb session files (default: the first directory under /data that
+#                       contains .nwb files, else ./nwb_sessions)
+#   DR_PRECOMPUTED_DIR  output directory (default: /results/precomputed when /results exists, else ./data/precomputed)
+#
+# The viewer itself is started with code/run_app.sh (interactive workstation), not by this script.
+set -euo pipefail
+cd "$(dirname "$0")/.."
+
+if [ -z "${DR_DATA_DIR:-}" ] && [ -d /data ]; then
+  first_nwb=$(find /data -maxdepth 3 -name '*.nwb' 2>/dev/null | head -1 || true)
+  [ -n "$first_nwb" ] && export DR_DATA_DIR="$(dirname "$first_nwb")"
+fi
+export DR_DATA_DIR="${DR_DATA_DIR:-$PWD/nwb_sessions}"
+if [ -z "${DR_PRECOMPUTED_DIR:-}" ]; then
+  if [ -d /results ]; then export DR_PRECOMPUTED_DIR=/results/precomputed; else export DR_PRECOMPUTED_DIR="$PWD/data/precomputed"; fi
+fi
+mkdir -p "$DR_PRECOMPUTED_DIR"
+echo "DR_DATA_DIR=$DR_DATA_DIR"
+echo "DR_PRECOMPUTED_DIR=$DR_PRECOMPUTED_DIR"
+
+python code/inventory_sessions.py
+python code/precompute_aligned_spikes.py --overwrite
+python code/analyze_context_baseline_shift.py
+python code/analyze_rule_change_units.py
+python code/fetch_ccf_mesh.py
+python code/check_rule_change_units.py
+python code/check_context_baseline_shift.py
+python code/check_brain3d.py
+echo "precompute finished: $(du -sh "$DR_PRECOMPUTED_DIR" | cut -f1) in $DR_PRECOMPUTED_DIR"

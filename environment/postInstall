@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+# Code Ocean environment post-install: Python dependencies for the pipeline and the Shiny viewer.
+set -e
+pip install --no-cache-dir -r /code/requirements.txt jupyter-server-proxy

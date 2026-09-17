@@ -1,0 +1,13 @@
+[PASS] (a) independent recount of context means for 3 robust units: u1394 aud 1.239/1.239 vis 2.442/2.442; u1072 aud 3.423/3.423 vis 4.702/4.702; u1949 aud 1.225/1.225 vis 2.263/2.263
+[PASS] (b-i) pure null (same-context block pairs) frac p<0.05 mean<=0.10 and max<=0.15: mean 0.039 max 0.050 per pair [0.042, 0.048, 0.05, 0.036, 0.016, 0.044]
+[PASS] (b-ii) real labelling ranks 1st of 19 block labellings (detrended chunk test): real 0.445 | shuffles mean 0.053 max 0.147 (n=18; shuffles agree with truth on 2 or 4 of 6 blocks, so only partially null) | rank 1/19
+[info] (b-iii) trial-level MWU: real 0.610 | shuffles mean 0.503 max 0.628  (anticonservative, descriptive only)
+[info] (b-iii) undetrended chunk test: real 0.397 | shuffles mean 0.229 max 0.430
+[PASS] (c1) q_bh >= p_perm for all rows
+[PASS] (c2) is_robust implies is_significant
+[PASS] (c3) p_perm >= 1/(n_perm+1): min p_perm 0.00050
+[PASS] (d1) constant-rate input detrends to all zeros (edges included)
+[PASS] (d2) detrend_rates(..., 0) returns R unchanged
+[info] (d3) unit 1394: interior mean raw 1.4125 Hz vs detrended -0.1522 Hz (window 162 trials)
+
+8/8 checks passed for 759434_2025-02-04

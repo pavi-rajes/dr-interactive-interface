@@ -1,0 +1,21 @@
+[PASS] (a) independent recount of early/late means (3 units x 2 windows): u1271 bl_early 1.250/1.250; u1271 bl_late 0.429/0.429; u1271 ev_early 1.307/1.307; u1271 ev_late 0.508/0.508; u1204 bl_early 28.565/28.565; u1204 bl_late 34.413/34.413 ...
+[info] 664851_2023-11-15: baseline real 0.150 pseudo 0.098 | evoked(res) real 0.102 pseudo 0.082
+[info] 668755_2023-08-31: baseline real 0.215 pseudo 0.085 | evoked(res) real 0.120 pseudo 0.086
+[info] 713655_2024-08-09: baseline real 0.167 pseudo 0.069 | evoked(res) real 0.092 pseudo 0.069
+[info] 742903_2024-10-22: baseline real 0.179 pseudo 0.117 | evoked(res) real 0.125 pseudo 0.110
+[info] 759434_2025-02-04: baseline real 0.233 pseudo 0.065 | evoked(res) real 0.133 pseudo 0.071
+[PASS] (b) baseline: pseudo-switch null mean<=0.10 and max<=0.15 across sessions: pseudo mean 0.087 max 0.117 | real mean 0.189 min 0.150
+[PASS] (b) evoked: pseudo-switch null mean<=0.10 and max<=0.15 across sessions: pseudo mean 0.084 max 0.110 | real mean 0.114 min 0.092
+[PASS] (c) bl: q_bh >= p_perm
+[PASS] (c) bl: is_robust implies is_significant
+[PASS] (c) bl: p_perm >= 1/(n_perm+1)
+[PASS] (c) ev: q_bh >= p_perm
+[PASS] (c) ev: is_robust implies is_significant
+[PASS] (c) ev: p_perm >= 1/(n_perm+1)
+[PASS] (c) is_rule_updating == bl_is_robust | ev_is_robust
+[PASS] (c) n_blocks: both == 5 and directions sum to 5
+[PASS] (c) every chunk in the primary test has a single label: asserted inside early_late_test during (b)
+[PASS] (d) every (unit, direction, window) has 45 rel_trial rows: n groups 40110
+[PASS] (d) hand-recomputed profile values match (rel -1, 0, 5): unit 1271
+
+14/14 checks passed

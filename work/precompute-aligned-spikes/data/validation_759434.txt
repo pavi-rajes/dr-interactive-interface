@@ -1,0 +1,9 @@
+[PASS] (a) brute-force recount matches for 3 units x 20 trials: units [1, 1209, 2279]
+[PASS] (b) t_rel within window: min -2.0000 max 3.0000 window [-2.0, 3.0]
+[PASS] (c1) trials rows == NWB trials: 545 vs 545
+[PASS] (c2) units rows == NWB QC-pass units: 744 vs 744 (of 2285)
+[PASS] (c3) no NaN unit_id
+[PASS] (c4) n_spikes_aligned matches aligned table
+[PASS] (d) pre-stim rate plausible vs task rate: unit 1209: pre-stim 0.21 Hz, task epoch 0.24 Hz, NWB session firing_rate 0.90 Hz
+
+7/7 checks passed for 759434_2025-02-04

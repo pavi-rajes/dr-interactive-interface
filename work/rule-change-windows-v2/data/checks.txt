@@ -1,0 +1,38 @@
+[PASS] (a) independent recount of instruction/early/late means (3 units x 2 windows): u1464 bl_early 0.250/0.250; u1464 bl_late 0.292/0.292; u1464 ev_early 0.240/0.240; u1464 ev_late 0.520/0.520; u964 bl_early 0.292/0.292; u964 bl_late 0.361/0.361 ...
+[info] 664851_2023-11-15: baseline real 0.103 pseudo 0.069 | evoked(res) real 0.056 pseudo 0.064
+[info] 668755_2023-08-31: baseline real 0.082 pseudo 0.060 | evoked(res) real 0.067 pseudo 0.061
+[info] 713655_2024-08-09: baseline real 0.097 pseudo 0.040 | evoked(res) real 0.062 pseudo 0.049
+[info] 742903_2024-10-22: baseline real 0.088 pseudo 0.105 | evoked(res) real 0.090 pseudo 0.072
+[info] 759434_2025-02-04: baseline real 0.188 pseudo 0.075 | evoked(res) real 0.108 pseudo 0.069
+[PASS] (b) baseline: pseudo-switch null mean<=0.10 and max<=0.15 across sessions: pseudo mean 0.070 max 0.105 | real mean 0.112 min 0.082
+[PASS] (b) evoked: pseudo-switch null mean<=0.10 and max<=0.15 across sessions: pseudo mean 0.063 max 0.072 | real mean 0.077 min 0.056
+[PASS] (c) bl_: q_bh >= p_perm
+[PASS] (c) bl_: robust implies significant; robust implies candidate implies liberal
+[PASS] (c) bl_: p_perm >= 1/(n_perm+1)
+[PASS] (c) ev_: q_bh >= p_perm
+[PASS] (c) ev_: robust implies significant; robust implies candidate implies liberal
+[PASS] (c) ev_: p_perm >= 1/(n_perm+1)
+[PASS] (c) is_rule_updating == bl|ev robust; is_candidate == bl|ev candidate
+[PASS] (c) bl_inst_: q_bh >= p_perm
+[PASS] (c) bl_inst_: robust implies significant; robust implies candidate implies liberal
+[PASS] (c) bl_inst_: p_perm >= 1/(n_perm+1)
+[PASS] (c) ev_inst_: q_bh >= p_perm
+[PASS] (c) ev_inst_: robust implies significant; robust implies candidate implies liberal
+[PASS] (c) ev_inst_: p_perm >= 1/(n_perm+1)
+[PASS] (c) inst_is_rule_updating == bl|ev robust; inst_is_candidate == bl|ev candidate
+[PASS] (c) n_blocks: both == 5 and contexts sum to 5
+[PASS] (c) n_trials_early == 10 x n_blocks and n_trials_late == late_n x n_blocks
+[PASS] (c) every chunk in the primary test has a single label: asserted inside early_late_test during (b)
+[PASS] (e) Kruskal-Wallis H and chi2 p match scipy.stats.kruskal for 3 units: u1464 H 0.579/0.579 p_perm 0.741; u964 H 3.221/3.221 p_perm 0.171; u1939 H 23.389/23.389 p_perm 0.0002
+[info] KW 664851_2023-11-15: omnibus p<0.05 real 0.182 / mid-block pseudo 0.126 | flag (omnibus & both post-hoc p<0.05) real 0.030 / pseudo 0.012
+[info] KW 668755_2023-08-31: omnibus p<0.05 real 0.238 / mid-block pseudo 0.146 | flag (omnibus & both post-hoc p<0.05) real 0.046 / pseudo 0.017
+[info] KW 713655_2024-08-09: omnibus p<0.05 real 0.227 / mid-block pseudo 0.090 | flag (omnibus & both post-hoc p<0.05) real 0.055 / pseudo 0.011
+[info] KW 742903_2024-10-22: omnibus p<0.05 real 0.257 / mid-block pseudo 0.141 | flag (omnibus & both post-hoc p<0.05) real 0.058 / pseudo 0.013
+[info] KW 759434_2025-02-04: omnibus p<0.05 real 0.308 / mid-block pseudo 0.130 | flag (omnibus & both post-hoc p<0.05) real 0.054 / pseudo 0.008
+[PASS] (e) KW flag null: mid-block pseudo phases flagged <= 0.05 mean, <= 0.08 max: pseudo flag mean 0.012 max 0.017 (omnibus-only pseudo mean 0.127, anticonservative because trial shuffles ignore autocorrelation) | real flag mean 0.049
+[PASS] (e) bl_kw: q_bh >= p_perm; rule_updating implies omnibus p<0.05 and both post-hoc p<0.05; candidate implies rule_updating
+[PASS] (e) ev_kw: q_bh >= p_perm; rule_updating implies omnibus p<0.05 and both post-hoc p<0.05; candidate implies rule_updating
+[PASS] (d) every (unit, context, align, window) has the expected number of rel_trial rows: n groups 80220
+[PASS] (d) hand-recomputed profile values match (start 0, 5, 10; end -1, -10): unit 1464
+
+26/26 checks passed
