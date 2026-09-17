@@ -1,76 +1,76 @@
 
 ===== tab_context =====
-INFO:     Started server process [96968]
+INFO:     Started server process [77752]
 INFO:     Waiting for application startup.
 INFO:     Application startup complete.
 INFO:     Uvicorn running on http://127.0.0.1:8123 (Press CTRL+C to quit)
-INFO:     127.0.0.1:52575 - "GET / HTTP/1.1" 200 OK
-INFO:     127.0.0.1:52617 - "GET / HTTP/1.1" 200 OK
-INFO:     127.0.0.1:52618 - "GET /lib/jquery-3.6.0/jquery-3.6.0.min.js HTTP/1.1" 200 OK
-INFO:     127.0.0.1:52620 - "GET /lib/bootstrap-5.3.8/bootstrap.min.css HTTP/1.1" 200 OK
-INFO:     127.0.0.1:52622 - "GET /lib/bootstrap-5.3.8/bootstrap.bundle.min.js HTTP/1.1" 200 OK
-INFO:     127.0.0.1:52617 - "GET /lib/requirejs-2.3.6/require.min.js HTTP/1.1" 200 OK
-INFO:     127.0.0.1:52621 - "GET /lib/shiny-1.7.0/shiny.js HTTP/1.1" 200 OK
-INFO:     127.0.0.1:52619 - "GET /lib/shiny-busy-indicators-1.7.0/busy-indicators.css HTTP/1.1" 200 OK
-INFO:     127.0.0.1:52626 - "GET /lib/ipywidget-output-binding-0.8.1/shinywidgets.css HTTP/1.1" 200 OK
-INFO:     127.0.0.1:52625 - "GET /lib/htmltools-fill-0.5.9.9000/fill.css HTTP/1.1" 200 OK
-INFO:     127.0.0.1:52627 - "GET /lib/bslib-components-0.11.0.9000/components.min.js HTTP/1.1" 200 OK
-INFO:     127.0.0.1:52628 - "GET /lib/bslib-components-0.11.0.9000/web-components.min.js HTTP/1.1" 200 OK
-INFO:     127.0.0.1:52626 - "GET /lib/ionrangeslider-2.3.1/js/ion.rangeSlider.min.js HTTP/1.1" 200 OK
-INFO:     127.0.0.1:52625 - "GET /lib/strftime-0.9.2/strftime-min.js HTTP/1.1" 200 OK
-INFO:     127.0.0.1:52629 - "GET /lib/bootstrap-datepicker-1.9.0/js/bootstrap-datepicker.min.js HTTP/1.1" 200 OK
-INFO:     127.0.0.1:52630 - "GET /lib/selectize-0.12.6/js/selectize.min.js HTTP/1.1" 200 OK
-INFO:     127.0.0.1:52627 - "GET /lib/selectize-0.12.6/accessibility/js/selectize-plugin-a11y.min.js HTTP/1.1" 200 OK
-INFO:     127.0.0.1:52626 - "GET /lib/ipywidget-output-binding-0.8.1/output.js HTTP/1.1" 200 OK
-INFO:     127.0.0.1:52628 - "GET /lib/ipywidget-output-binding-0.8.1/libembed-amd.js HTTP/1.1" 200 OK
-INFO:     127.0.0.1:52625 - "GET /lib/shiny-data-frame-output-1.7.0/data-frame.js HTTP/1.1" 200 OK
-INFO:     127.0.0.1:52629 - "GET /lib/bootstrap-5.3.8/font.css HTTP/1.1" 200 OK
-INFO:     127.0.0.1:52628 - "GET /lib/bootstrap-5.3.8/fonts/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTS-muw.woff2 HTTP/1.1" 200 OK
-INFO:     127.0.0.1:52628 - "GET /lib/shiny-busy-indicators-1.7.0/spinners/ring.svg HTTP/1.1" 200 OK
-INFO:     127.0.0.1:52635 - "WebSocket /websocket/" [accepted]
+INFO:     127.0.0.1:64357 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64376 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64386 - "GET /lib/bootstrap-5.3.8/bootstrap.min.css HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64385 - "GET /lib/shiny-busy-indicators-1.7.0/busy-indicators.css HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64376 - "GET /lib/requirejs-2.3.6/require.min.js HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64388 - "GET /lib/shiny-1.7.0/shiny.js HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64389 - "GET /lib/bootstrap-5.3.8/bootstrap.bundle.min.js HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64387 - "GET /lib/jquery-3.6.0/jquery-3.6.0.min.js HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64376 - "GET /lib/htmltools-fill-0.5.9.9000/fill.css HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64385 - "GET /lib/ipywidget-output-binding-0.8.1/shinywidgets.css HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64387 - "GET /lib/bslib-components-0.11.0.9000/web-components.min.js HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64389 - "GET /lib/bslib-components-0.11.0.9000/components.min.js HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64388 - "GET /lib/ionrangeslider-2.3.1/js/ion.rangeSlider.min.js HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64385 - "GET /lib/strftime-0.9.2/strftime-min.js HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64376 - "GET /lib/bootstrap-datepicker-1.9.0/js/bootstrap-datepicker.min.js HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64389 - "GET /lib/bootstrap-5.3.8/font.css HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64386 - "GET /lib/selectize-0.12.6/js/selectize.min.js HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64387 - "GET /lib/selectize-0.12.6/accessibility/js/selectize-plugin-a11y.min.js HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64385 - "GET /lib/ipywidget-output-binding-0.8.1/output.js HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64388 - "GET /lib/ipywidget-output-binding-0.8.1/libembed-amd.js HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64387 - "GET /lib/shiny-data-frame-output-1.7.0/data-frame.js HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64388 - "GET /lib/bootstrap-5.3.8/fonts/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTS-muw.woff2 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64394 - "GET /lib/shiny-busy-indicators-1.7.0/spinners/ring.svg HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64395 - "WebSocket /websocket/" [accepted]
 INFO:     connection open
-INFO:     127.0.0.1:52625 - "GET /favicon.ico HTTP/1.1" 404 Not Found
-INFO:     127.0.0.1:52628 - "GET /lib/bootstrap-5.3.8/fonts/memtYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWqWuU6F.woff2 HTTP/1.1" 200 OK
-INFO:     127.0.0.1:52628 - "GET /lib/anywidget-0.0/index.js HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64394 - "GET /lib/bootstrap-5.3.8/fonts/memtYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWqWuU6F.woff2 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64394 - "GET /favicon.ico HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:64394 - "GET /lib/anywidget-0.0/index.js HTTP/1.1" 200 OK
 INFO:     Shutting down
 INFO:     Waiting for application shutdown.
 INFO:     Application shutdown complete.
-INFO:     Finished server process [96968]
+INFO:     Finished server process [77752]
 
 ===== tab_rule =====
-INFO:     Started server process [97158]
+INFO:     Started server process [77928]
 INFO:     Waiting for application startup.
 INFO:     Application startup complete.
 INFO:     Uvicorn running on http://127.0.0.1:8123 (Press CTRL+C to quit)
-INFO:     127.0.0.1:52685 - "GET / HTTP/1.1" 200 OK
-INFO:     127.0.0.1:52706 - "GET / HTTP/1.1" 200 OK
-INFO:     127.0.0.1:52706 - "GET /lib/requirejs-2.3.6/require.min.js HTTP/1.1" 200 OK
-INFO:     127.0.0.1:52708 - "GET /lib/shiny-busy-indicators-1.7.0/busy-indicators.css HTTP/1.1" 200 OK
-INFO:     127.0.0.1:52710 - "GET /lib/shiny-1.7.0/shiny.js HTTP/1.1" 200 OK
-INFO:     127.0.0.1:52709 - "GET /lib/bootstrap-5.3.8/bootstrap.min.css HTTP/1.1" 200 OK
-INFO:     127.0.0.1:52707 - "GET /lib/jquery-3.6.0/jquery-3.6.0.min.js HTTP/1.1" 200 OK
-INFO:     127.0.0.1:52711 - "GET /lib/bootstrap-5.3.8/bootstrap.bundle.min.js HTTP/1.1" 200 OK
-INFO:     127.0.0.1:52717 - "GET /lib/ipywidget-output-binding-0.8.1/shinywidgets.css HTTP/1.1" 200 OK
-INFO:     127.0.0.1:52716 - "GET /lib/htmltools-fill-0.5.9.9000/fill.css HTTP/1.1" 200 OK
-INFO:     127.0.0.1:52718 - "GET /lib/bslib-components-0.11.0.9000/components.min.js HTTP/1.1" 200 OK
-INFO:     127.0.0.1:52719 - "GET /lib/bslib-components-0.11.0.9000/web-components.min.js HTTP/1.1" 200 OK
-INFO:     127.0.0.1:52720 - "GET /lib/ionrangeslider-2.3.1/js/ion.rangeSlider.min.js HTTP/1.1" 200 OK
-INFO:     127.0.0.1:52718 - "GET /lib/selectize-0.12.6/js/selectize.min.js HTTP/1.1" 200 OK
-INFO:     127.0.0.1:52719 - "GET /lib/selectize-0.12.6/accessibility/js/selectize-plugin-a11y.min.js HTTP/1.1" 200 OK
-INFO:     127.0.0.1:52717 - "GET /lib/strftime-0.9.2/strftime-min.js HTTP/1.1" 200 OK
-INFO:     127.0.0.1:52716 - "GET /lib/bootstrap-datepicker-1.9.0/js/bootstrap-datepicker.min.js HTTP/1.1" 200 OK
-INFO:     127.0.0.1:52721 - "GET /lib/ipywidget-output-binding-0.8.1/libembed-amd.js HTTP/1.1" 200 OK
-INFO:     127.0.0.1:52720 - "GET /lib/bootstrap-5.3.8/font.css HTTP/1.1" 200 OK
-INFO:     127.0.0.1:52719 - "GET /lib/ipywidget-output-binding-0.8.1/output.js HTTP/1.1" 200 OK
-INFO:     127.0.0.1:52718 - "GET /lib/shiny-data-frame-output-1.7.0/data-frame.js HTTP/1.1" 200 OK
-INFO:     127.0.0.1:52721 - "GET /lib/bootstrap-5.3.8/fonts/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTS-muw.woff2 HTTP/1.1" 200 OK
-INFO:     127.0.0.1:52721 - "GET /lib/shiny-busy-indicators-1.7.0/spinners/ring.svg HTTP/1.1" 200 OK
-INFO:     127.0.0.1:52730 - "WebSocket /websocket/" [accepted]
+INFO:     127.0.0.1:64422 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64460 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64460 - "GET /lib/requirejs-2.3.6/require.min.js HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64461 - "GET /lib/jquery-3.6.0/jquery-3.6.0.min.js HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64463 - "GET /lib/bootstrap-5.3.8/bootstrap.min.css HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64462 - "GET /lib/shiny-busy-indicators-1.7.0/busy-indicators.css HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64464 - "GET /lib/shiny-1.7.0/shiny.js HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64465 - "GET /lib/bootstrap-5.3.8/bootstrap.bundle.min.js HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64460 - "GET /lib/htmltools-fill-0.5.9.9000/fill.css HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64462 - "GET /lib/bslib-components-0.11.0.9000/components.min.js HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64461 - "GET /lib/ipywidget-output-binding-0.8.1/shinywidgets.css HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64465 - "GET /lib/bslib-components-0.11.0.9000/web-components.min.js HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64460 - "GET /lib/ionrangeslider-2.3.1/js/ion.rangeSlider.min.js HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64462 - "GET /lib/bootstrap-datepicker-1.9.0/js/bootstrap-datepicker.min.js HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64464 - "GET /lib/strftime-0.9.2/strftime-min.js HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64461 - "GET /lib/selectize-0.12.6/js/selectize.min.js HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64465 - "GET /lib/ipywidget-output-binding-0.8.1/libembed-amd.js HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64463 - "GET /lib/selectize-0.12.6/accessibility/js/selectize-plugin-a11y.min.js HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64460 - "GET /lib/bootstrap-5.3.8/font.css HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64464 - "GET /lib/ipywidget-output-binding-0.8.1/output.js HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64463 - "GET /lib/shiny-data-frame-output-1.7.0/data-frame.js HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64466 - "GET /lib/bootstrap-5.3.8/fonts/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTS-muw.woff2 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64466 - "GET /lib/shiny-busy-indicators-1.7.0/spinners/ring.svg HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64473 - "WebSocket /websocket/" [accepted]
 INFO:     connection open
-INFO:     127.0.0.1:52721 - "GET /lib/bootstrap-5.3.8/fonts/memtYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWqWuU6F.woff2 HTTP/1.1" 200 OK
-INFO:     127.0.0.1:52721 - "GET /favicon.ico HTTP/1.1" 404 Not Found
-INFO:     127.0.0.1:52721 - "GET /lib/anywidget-0.0/index.js HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64466 - "GET /lib/bootstrap-5.3.8/fonts/memtYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWqWuU6F.woff2 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64466 - "GET /favicon.ico HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:64466 - "GET /lib/anywidget-0.0/index.js HTTP/1.1" 200 OK
 INFO:     Shutting down
 INFO:     Waiting for application shutdown.
 INFO:     Application shutdown complete.
-INFO:     Finished server process [97158]
+INFO:     Finished server process [77928]

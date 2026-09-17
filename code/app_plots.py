@@ -391,3 +391,69 @@ def kw_null_plot(res: dict, title: str | None = None) -> plt.Figure:
     if title:
         fig.suptitle(title, fontsize=9)
     return fig
+
+
+# ----------------------------------------------------------------------------- instruction-trial dynamics
+def _fit_step_vs_decay(y: np.ndarray):
+    """Compare a step (trial 0 vs trials 1..4) with an exponential decay on 5 points; return dict with AICs."""
+    x = np.arange(len(y))
+    n = len(y)
+    # step: two means
+    pred_step = np.where(x == 0, y[0], y[1:].mean())
+    rss_step = ((y - pred_step) ** 2).sum()
+    # exponential decay: y = a*exp(-x/tau) + c, grid over tau, closed form for a, c
+    best = (np.inf, None)
+    for tau in np.geomspace(0.2, 20, 60):
+        e = np.exp(-x / tau)
+        A = np.column_stack([e, np.ones(n)])
+        coef, *_ = np.linalg.lstsq(A, y, rcond=None)
+        rss = ((y - A @ coef) ** 2).sum()
+        if rss < best[0]:
+            best = (rss, (coef[0], tau, coef[1]))
+    rss_dec = best[0]
+    aic = lambda rss, k: n * np.log(max(rss, 1e-12) / n) + 2 * k
+    return {"aic_step": aic(rss_step, 2), "aic_decay": aic(rss_dec, 3), "decay_params": best[1], "pred_step": pred_step}
+
+
+def instruction_dynamics_plot(unit_prof: pd.DataFrame, pop_prof: pd.DataFrame | None, n_pos: int = 15, instruction_n: int = 5,
+                              window: str = "baseline", pop_label: str = "", title: str | None = None) -> plt.Figure:
+    """Left: selected unit's mean rate at within-block positions 0..n_pos-1 (block_start-aligned profile), per context and
+    pooled. Right: population fold change (rate / unit's late-trial rate) over the same positions for the displayed
+    rule-updating set, mean and SEM, with a step-vs-exponential-decay comparison over the instruction trials.
+    pop_prof: long table with columns unit_key, rel_trial, fold (one row per unit x position)."""
+    fig, axes = plt.subplots(1, 2, figsize=(9, 3.0), layout="tight")
+    ax = axes[0]
+    for c, col, lw in (("aud", AUD, 1.1), ("vis", VIS, 1.1), ("both", "#222222", 1.8)):
+        p = unit_prof[(unit_prof["context"] == c) & (unit_prof["align"] == "block_start") & (unit_prof["rel_trial"] < n_pos)].sort_values("rel_trial")
+        if len(p):
+            ax.plot(p["rel_trial"], p["mean_rate"], marker="o", ms=3, lw=lw, color=col, label=f"{c} blocks" if c != "both" else "all switch blocks")
+    ax.axvspan(-0.5, instruction_n - 0.5, color=PHASE_COLOR["instruction"], alpha=0.15, lw=0, label="instruction trials")
+    ax.set_xlabel("trial in block"); ax.set_ylabel(f"{window} rate (Hz)"); ax.set_xticks(range(0, n_pos, 2)); ax.tick_params(labelsize=8)
+    ax.set_title("selected unit (mean over blocks)", fontsize=9)
+    ax.legend(fontsize=6.5, loc="lower left", bbox_to_anchor=(0, 1.08), ncol=4, frameon=False)
+    ax = axes[1]
+    if pop_prof is not None and len(pop_prof):
+        g = pop_prof.groupby("rel_trial")["fold"]
+        m, sem, n_units = g.mean(), g.sem(), g.size().max()
+        x = m.index.to_numpy()
+        ax.fill_between(x, m - sem, m + sem, color="#555555", alpha=0.18, lw=0)
+        ax.plot(x, m.to_numpy(), marker="o", ms=3, lw=1.6, color="#222222", label=f"population mean ± SEM (n={int(n_units)} units)")
+        y5 = m.reindex(range(instruction_n)).to_numpy()
+        if np.isfinite(y5).all():
+            fit = _fit_step_vs_decay(y5)
+            ax.plot(range(instruction_n), fit["pred_step"], color=PHASE_COLOR["instruction"], lw=1.2, ls="--", label="step fit (trial 0 vs 1-4)")
+            a, tau, c0 = fit["decay_params"]
+            ax.plot(np.arange(instruction_n), a * np.exp(-np.arange(instruction_n) / tau) + c0, color=EARLYC, lw=1.2, ls=":", label=f"exp. decay fit (tau={tau:.1f})")
+            better = "step" if fit["aic_step"] < fit["aic_decay"] else "exponential decay"
+            ax.set_title(f"population: {better} fits better (AIC step {fit['aic_step']:.1f} vs decay {fit['aic_decay']:.1f})", fontsize=8.5)
+        else:
+            ax.set_title("population", fontsize=9)
+        ax.axhline(1.0, color="k", lw=0.6, alpha=0.6)
+    else:
+        ax.text(0.5, 0.5, "no units in the current set", ha="center", va="center", transform=ax.transAxes, fontsize=9)
+    ax.axvspan(-0.5, instruction_n - 0.5, color=PHASE_COLOR["instruction"], alpha=0.15, lw=0)
+    ax.set_xlabel("trial in block"); ax.set_ylabel("rate / late-trial rate"); ax.set_xticks(range(0, n_pos, 2)); ax.tick_params(labelsize=8)
+    ax.legend(fontsize=6.5, loc="lower left", bbox_to_anchor=(0, 1.08), ncol=3, frameon=False)
+    if title:
+        fig.suptitle(title, fontsize=9, y=1.08)
+    return fig

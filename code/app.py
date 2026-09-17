@@ -113,6 +113,7 @@ tab_rule = ui.nav_panel(
                                    selected="baseline", inline=True),
             *common_controls("r", (-1.5, -0.06), ["MOs", "CP", "PL"]),
             ui.input_checkbox("r_split_ctx", "Split PSTH by context", False),
+            ui.input_checkbox("r_pop_region", "Population dynamics: selected region only", False),
             ui.input_checkbox("r_first_block", "Include block 0 in the per-context view (no preceding rule)", False),
             width=320, open="always"),
         ui.layout_columns(
@@ -121,6 +122,8 @@ tab_rule = ui.nav_panel(
                 ui.card(ui.card_header("Raster: all blocks stacked in session order (shaded bands = instruction, early, late trials; rewarded context labelled) and PSTH: instruction vs early vs late"),
                         ui.output_plot("r_raster", height="860px")),
                 ui.card(ui.card_header("Mean rate by position in block, per context"), ui.output_plot("r_profile", height="290px")),
+                ui.card(ui.card_header("Instruction-trial dynamics: selected unit and the displayed population (trials 0 to 14 of switch blocks)"),
+                        ui.output_plot("r_dynamics", height="330px")),
             ),
             ui.div(
                 ui.card(ui.card_header("Rule-change units (click a dot to select)"), output_widget("brain_rule", height="560px")),
@@ -452,6 +455,35 @@ def server(input, output, session):
         w = input.r_window()
         return PL.aligned_means_plot(D.unit_profile(sid, ui_, w), D.structure_profile(r_row()["structure"], w), window=w,
                                      instruction_n=INSTR_N, early_window=EARLY_WIN, late_n=LATE_N)
+
+    @reactive.calc
+    def r_population_profiles():
+        """Fold-change profiles (block_start positions 0..14, pooled contexts) for the displayed rule-updating set."""
+        t = r_table()
+        flag = r_flag()
+        if flag:
+            t = t[t[flag]]
+        if not input.r_all_sessions():
+            t = t[t["session_id"] == input.r_session()]
+        if input.r_pop_region():
+            t = t[t["structure"] == input.r_structure()]
+        if t.empty:
+            return pd.DataFrame(columns=["unit_key", "rel_trial", "fold"])
+        keys = t[["session_id", "unit_index"]].drop_duplicates()
+        prof = D.rule_profiles()
+        prof = prof[(prof["context"] == "both") & (prof["window"] == input.r_window())].merge(keys, on=["session_id", "unit_index"])
+        late = prof[(prof["align"] == "block_end") & (prof["rel_trial"] >= -LATE_N)].groupby(["session_id", "unit_index"])["mean_rate"].mean().rename("late")
+        start = prof[(prof["align"] == "block_start") & (prof["rel_trial"] < 15)].merge(late.reset_index(), on=["session_id", "unit_index"])
+        start["fold"] = (start["mean_rate"] + 0.1) / (start["late"] + 0.1)
+        start["unit_key"] = start["session_id"] + ":" + start["unit_index"].astype(str)
+        return start[["unit_key", "rel_trial", "fold"]]
+
+    @render.plot
+    def r_dynamics():
+        sid, ui_ = r_key()
+        w = input.r_window()
+        return PL.instruction_dynamics_plot(D.unit_profile(sid, ui_, w), r_population_profiles(), n_pos=15, instruction_n=INSTR_N, window=w,
+                                            title=f"{sid} unit {ui_} ({r_row()['structure']}); population = current dot set, {w} window")
 
     @render_widget
     def brain_rule():

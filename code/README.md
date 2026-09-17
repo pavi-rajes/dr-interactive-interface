@@ -171,7 +171,10 @@ both), test (KW instruction > early and late, or the two chunk-permutation contr
 statistics window; dots, unit list and region table all follow the selected window. Tab 2 plots:
 whole-session block timeline; one raster with all blocks stacked in session order (plain spike
 marks, shaded bands for instruction / early / late trials, rewarded context labelled per block) with an instruction / early / late PSTH; block-start
-and block-end aligned means per context; and, for the selected unit, the permutation null recomputed
+and block-end aligned means per context; an instruction-trial dynamics panel (`instruction_dynamics_plot`: the selected unit's mean rate at
+block positions 0 to 14 per context, and the displayed population's fold change relative to each unit's
+late-trial rate with SEM, plus a step-vs-exponential-decay AIC comparison over the five instruction trials,
+replicating AutoDiscovery followup-III experiments node_4_16 / node_4_45); and, for the selected unit, the permutation null recomputed
 live for the current analysis window and context (`kw_null_for_unit`, 5,000 shuffles) with the
 observed statistics. The region table lists units recorded (all sorted units, from
 `sessions_manifest.json`), QC-pass units, rule-updating units for the current selection, the number
