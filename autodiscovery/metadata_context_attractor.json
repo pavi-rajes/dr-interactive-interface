@@ -1,0 +1,53 @@
+{
+  "name": "dr-context-attractor-states",
+  "description": "Allen Institute / AIND Dynamic Routing (DR) dataset \u2014 Neuropixels recordings from mice performing a visual/auditory context-switching task. TASK STRUCTURE - Each session has 6 BLOCKS of 77 to 93 trials (515 to 545 trials/session; earlier run descriptions saying ~30 trials per block were wrong for these five sessions). A block defines the rewarded context. - Four stimuli: vis1, vis2 (visual) and aud1, aud2 (auditory). The REWARDED TARGET alternates by block \u2014 vis1 -> aud1 -> vis1 -> ... (first block is counterbalanced across sessions). The same-modality non-target (vis2 in a visual block, aud2 in an auditory block) and both other-modality stimuli act as distractors; a catch (no-stimulus) condition occurs on ~10% of trials. - Trial outcomes: Hit (lick to the rewarded target), Miss (no lick to target), Correct Reject (correct withhold to a distractor), False Alarm (lick to a distractor). - BLOCK SWITCHES ARE UNSIGNALED. The ONLY cue that the context changed is the block's first 5 INSTRUCTION TRIALS: the newly rewarded target is presented with non-contingent reward (late_autoreward \u2014 reward fires at the end of the response window unless the animal already licked). The animal must infer the new rewarded modality from these 5 (stimulus, reward) pairs before normal test trials begin. After the instruction trials, all 4 stimuli plus catch are presented shuffled. - These 5 instruction trials are a distinct epoch: reward is NOT contingent on behavior, so their outcomes are not comparable to test-trial Hit/Miss/CR/FA. The first ~10 test trials after a switch are the \"transition\" phase (the animal is still inferring the rule); the remainder are \"steady-state\". NEURAL DATA - Simultaneous extracellular recordings across many CCF-registered regions. Common, well-covered regions: visual cortex (VISp/VISl/VISrl/VISam/VISpm), auditory cortex (AUDp and nearby), secondary motor cortex (MOs), prefrontal/frontal cortex (ACA, ORB, and other PFC), hippocampus (CA1), and striatum (CP). Region coverage VARIES BY SUBJECT:CA1, ORB, and simultaneous VIS+AUD are sparse; verify per-subject availability before relying on a region. - Units table provides spike times, a peak electrode that maps to a CCF region, quality metrics (e.g. default_qc / presence_ratio / firing rate / ISI violations), and waveform metrics including peak-to-valley duration usable for regular-spiking (RS, putative excitatory) vs fast-spiking (FS, putative inhibitory) classification. BEHAVIORAL DATA - Pupil area (arousal proxy; confirmed present), running/locomotion speed, lick times, reward times, and trial/stimulus event times. - Facial/body video keypoints (e.g. Lightning Pose / DLC tracking of features such as ear, nose, whisker pad, jaw) MAY be present in the processing modules. Verify these keypoints exist in a session before building any movement-to-neural analysis on them; do not assume.\n\nPHASE DEFINITIONS TO USE (fixed by the scientist): within every block, trials 0-4 (trial_index_in_block < 5) are the INSTRUCTION trials; EARLY = trials 5-14; LATE = the last 10 trials of the block. A block's CONTEXT is its rewarded modality (aud or vis). Block 0 has instruction trials but no preceding rule.\n\nWHAT IS ALREADY ESTABLISHED (from the scientist's own analysis of these five sessions and from AutoDiscovery runs DR-basic-exploration, DR-neural-codes-rule-updating-units, dr-rule-updating-units-followup-III, baseline-firing-rate-changes):\n- CONTEXT STATE: about 25% of QC-pass units (1,642/6,685) hold a different pre-stimulus (-1.5 to -0.06 s) firing level throughout aud vs vis blocks (detrended, block-consistent, BH q<0.05). Strongest in prefrontal areas (PL, ACA, ILA, ORB), also CP, MOs, sensory and somatomotor cortex; weak in CA1/CA3 in these sessions. Signs are mixed within every region (e.g. CP 77 units higher in aud blocks, 85 higher in vis), so it is a population code, not a global gain change. 60% of these units have every aud-block mean on one side of every vis-block mean; median shift 1.7-fold, 8% exceed 4-fold. The state is present on catch trials and in the inter-trial interval, is decodable from mPFC baselines, and is not explained by pupil size.\n- RULE-UPDATE TRANSIENT: a separate but overlapping population (291 units carry both signals vs 207 expected by chance) fires more during the 5 instruction trials than during early and late trials. It is modality-invariant, steps up from instruction trial 0 to trial 1-2, plateaus to trial 4 and collapses at trial 5 (not an exponentially decaying surprise signal), is most prevalent in CP (~12%) then MOs then mPFC, deep-layer enriched, cortex leads striatum by ~90 ms, may be partly reward-locked and partly movement-related (instruction trials have low running speed and high licking), and is not explained by pupil.\n- Behavioural switch: response rate to the previously rewarded modality's target falls from ~0.75 in trials 5-9 to ~0.1 by trials 20-29.",
+  "domain": "Systems neuroscience (Neuropixels, cognitive flexibility, attractor dynamics)",
+  "intent": "We want to test whether the context-dependent baseline shift is an ATTRACTOR-LIKE discrete state or a graded modulation, using population and single-unit analyses of the pre-stimulus window (-1.5 to -0.06 s before stimulus onset, i.e. the quiescent period) on steady-state trials, with the phase definitions above.\n\nIdentify context-coding units exactly as follows: per unit, per-trial baseline rate in the pre-stimulus window; exclude the first 10 trials of each block; compare aud-block vs vis-block rates with a test that respects within-block autocorrelation (e.g. block-level or contiguous-chunk permutation after removing slow drift), not a plain trial-level Mann-Whitney, which is anticonservative on these data.\n\nGenerate and test hypotheses that discriminate attractor dynamics from alternatives. Prioritise, in this order:\n1. DISCRETENESS: is each context-coding unit's per-trial baseline bimodal across the session (two components vs one; dip test or mixture-model comparison), and is the population projection onto the context axis bimodal with little mass between the modes?\n2. TRANSITION DYNAMICS: decode context trial by trial from the population baseline (cross-validated within session) and characterise the flip at each unsignaled switch: is it fast and all-or-none with variable latency (attractor jump), or a gradual ramp (integration/drift)? Report the flip latency in trials relative to the instruction trials and compare it with the behavioural switch latency in the same block.\n3. EXCURSIONS PREDICT ERRORS: on steady-state trials, do false alarms to the previously rewarded modality's target coincide with the decoder momentarily reporting the OLD context (noise-driven excursion), compared with correct rejections of the same stimulus?\n4. VARIANCE STRUCTURE: along the context axis, is within-state trial-to-trial variance suppressed relative to the between-state separation, and does variance rise transiently around switches?\n5. HYSTERESIS AND CROSS-REGION ORDER: does the state at block start reflect the previous block until the flip? Do regions flip simultaneously (one shared state) or in a fixed order (prefrontal before striatum before sensory cortex)? Compare PL/ACA/ILA/ORB, MOs, CP, VIS and AUD areas within the same session.\n6. RELATION TO THE RULE-UPDATE TRANSIENT: is the state flip time-locked to the instruction-trial transient of the overlapping units, and does the size of the transient in a block predict the speed of the state flip?\n7. CONFOUNDS: show that the two states are not explained by running speed, lick rate, pupil, reward rate or stimulus history (the stimulus set is identical across blocks; only the rewarded target differs). Use trial-matched or regression-controlled comparisons.\n\nDo not re-test modality invariance, exponential decay of the instruction transient, pupil/arousal, or FS-vs-RS cell type of the transient; those are settled. Prefer clean, well-powered, directly interpretable single-unit and population results, with one representative figure per experiment (e.g. per-trial baseline vs trial index with block boundaries, decoder posterior around switches, bimodality histograms). Use CCF acronyms for regions and verify per-session region coverage before relying on a region.",
+  "datasets": [
+    {
+      "content_type": "application/octet-stream",
+      "description": "",
+      "file_size_bytes": 5904375539,
+      "is_preloaded": false,
+      "name": "759434_2025-02-04.nwb",
+      "url": null
+    },
+    {
+      "content_type": "application/octet-stream",
+      "description": "",
+      "file_size_bytes": 7026927221,
+      "is_preloaded": false,
+      "name": "664851_2023-11-15.nwb",
+      "url": null
+    },
+    {
+      "content_type": "application/octet-stream",
+      "description": "",
+      "file_size_bytes": 9258810041,
+      "is_preloaded": false,
+      "name": "742903_2024-10-22.nwb",
+      "url": null
+    },
+    {
+      "content_type": "application/octet-stream",
+      "description": "",
+      "file_size_bytes": 7977964925,
+      "is_preloaded": false,
+      "name": "713655_2024-08-09.nwb",
+      "url": null
+    },
+    {
+      "content_type": "application/octet-stream",
+      "description": "",
+      "file_size_bytes": 6968840461,
+      "is_preloaded": false,
+      "name": "668755_2023-08-31.nwb",
+      "url": null
+    }
+  ],
+  "n_experiments": 50,
+  "exploration_weight": 2.0,
+  "mcts_selection": "pw",
+  "surprisal_width": 0.2,
+  "evidence_weight": 2.0
+}
